@@ -49,7 +49,6 @@ const Contact = (props) => {
                 <input
                   type="text"
                   name="name"
-                  required
                   placeholder="name:"
                   className="contact-input input"
                 />
