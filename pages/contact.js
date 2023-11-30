@@ -50,6 +50,7 @@ const Contact = (props) => {
                   type="text"
                   name="name"
                   placeholder="name:"
+                  required
                   className="contact-input input"
                 />
                 <input
