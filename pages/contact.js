@@ -47,25 +47,18 @@ const Contact = (props) => {
                 className="contact-form"
               >
                 <input
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="name:"
-                  className="contact-textinput input"
-                />
-                <input
                   type="tel"
                   name="number"
                   required
                   placeholder="number:"
-                  className="contact-textinput1 input"
+                  className="contact-textinput input"
                 />
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="email:"
-                  className="contact-textinput2 input"
+                  className="contact-textinput1 input"
                 />
                 <textarea
                   name="message"
@@ -304,23 +297,6 @@ const Contact = (props) => {
             border-bottom-width: 3px;
           }
           .contact-textinput1 {
-            width: 250px;
-            font-size: 15px;
-            align-self: flex-start;
-            box-shadow: 5px 5px 10px 0px #777373;
-            margin-top: var(--dl-space-space-halfunit);
-            font-family: Raleway;
-            margin-left: var(--dl-space-space-unit);
-            border-width: 2.5px;
-            border-radius: 25px;
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-transform: uppercase;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-            border-bottom-width: 3px;
-          }
-          .contact-textinput2 {
             width: 250px;
             font-size: 15px;
             align-self: flex-start;
@@ -780,12 +756,6 @@ const Contact = (props) => {
               margin-left: 0px;
               margin-bottom: 5px;
             }
-            .contact-textinput2 {
-              font-size: 12px;
-              margin-top: 5px;
-              margin-left: 0px;
-              margin-bottom: 5px;
-            }
             .contact-textarea {
               height: 125px;
               font-size: 12px;
@@ -920,12 +890,6 @@ const Contact = (props) => {
               padding-bottom: var(--dl-space-space-halfunit);
             }
             .contact-textinput1 {
-              align-self: center;
-              margin-left: 0px;
-              padding-top: var(--dl-space-space-halfunit);
-              padding-bottom: var(--dl-space-space-halfunit);
-            }
-            .contact-textinput2 {
               align-self: center;
               margin-left: 0px;
               padding-top: var(--dl-space-space-halfunit);
