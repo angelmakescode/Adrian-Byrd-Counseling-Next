@@ -46,29 +46,31 @@ const Contact = (props) => {
                 enctype="application/x-www-form-urlencoded"
                 className="contact-form"
               >
-                <textarea
-                  name="contact name"
-                  placeholder="name"
-                  className="contact-textarea textarea"
-                ></textarea>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="name:"
+                  className="contact-textinput input"
+                />
                 <input
                   type="tel"
                   name="number"
                   required
                   placeholder="number:"
-                  className="contact-textinput input"
+                  className="contact-textinput1 input"
                 />
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="email:"
-                  className="contact-textinput1 input"
+                  className="contact-textinput2 input"
                 />
                 <textarea
                   name="message"
                   placeholder="leave a message:"
-                  className="contact-textarea1 textarea"
+                  className="contact-textarea textarea"
                 ></textarea>
                 <button type="submit" className="contact-button button">
                   SUBMIT
@@ -284,28 +286,6 @@ const Contact = (props) => {
             flex-direction: column;
             justify-content: flex-end;
           }
-          .contact-textarea {
-            width: 250px;
-            height: auto;
-            font-size: 15px;
-            align-self: flex-start;
-            box-shadow: 5px 5px 10px 0px #928f8f;
-            margin-top: var(--dl-space-space-halfunit);
-            font-family: Raleway;
-            margin-left: var(--dl-space-space-unit);
-            padding-top: var(--dl-space-space-halfunit);
-            border-width: 2.5px;
-            padding-left: var(--dl-space-space-halfunit);
-            border-radius: 25px;
-            margin-bottom: var(--dl-space-space-unit);
-            padding-right: var(--dl-space-space-halfunit);
-            padding-bottom: var(--dl-space-space-halfunit);
-            text-transform: uppercase;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-            border-bottom-width: 3px;
-          }
           .contact-textinput {
             width: 250px;
             font-size: 15px;
@@ -327,6 +307,23 @@ const Contact = (props) => {
             width: 250px;
             font-size: 15px;
             align-self: flex-start;
+            box-shadow: 5px 5px 10px 0px #777373;
+            margin-top: var(--dl-space-space-halfunit);
+            font-family: Raleway;
+            margin-left: var(--dl-space-space-unit);
+            border-width: 2.5px;
+            border-radius: 25px;
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-transform: uppercase;
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 3px;
+          }
+          .contact-textinput2 {
+            width: 250px;
+            font-size: 15px;
+            align-self: flex-start;
             box-shadow: 5px 5px 10px 0px #807a7a;
             margin-top: var(--dl-space-space-halfunit);
             font-family: Raleway;
@@ -340,7 +337,7 @@ const Contact = (props) => {
             border-right-width: 0px;
             border-bottom-width: 3px;
           }
-          .contact-textarea1 {
+          .contact-textarea {
             width: 250px;
             height: 166px;
             font-size: 15px;
@@ -686,9 +683,6 @@ const Contact = (props) => {
             .contact-textarea {
               padding: 1rem;
             }
-            .contact-textarea1 {
-              padding: 1rem;
-            }
             .contact-button {
               align-self: center;
               margin-left: 0px;
@@ -774,17 +768,6 @@ const Contact = (props) => {
             .contact-form {
               align-self: center;
             }
-            .contact-textarea {
-              height: 125px;
-              font-size: 12px;
-              margin-top: 5px;
-              margin-left: 0px;
-              padding-top: var(--dl-space-space-unit);
-              padding-left: 1rem;
-              margin-bottom: 5px;
-              padding-right: 1rem;
-              padding-bottom: var(--dl-space-space-unit);
-            }
             .contact-textinput {
               font-size: 12px;
               margin-top: 5px;
@@ -797,7 +780,13 @@ const Contact = (props) => {
               margin-left: 0px;
               margin-bottom: 5px;
             }
-            .contact-textarea1 {
+            .contact-textinput2 {
+              font-size: 12px;
+              margin-top: 5px;
+              margin-left: 0px;
+              margin-bottom: 5px;
+            }
+            .contact-textarea {
               height: 125px;
               font-size: 12px;
               margin-top: 5px;
@@ -924,14 +913,6 @@ const Contact = (props) => {
             .contact-form {
               align-self: center;
             }
-            .contact-textarea {
-              width: 250px;
-              height: 100px;
-              align-self: center;
-              margin-left: 0px;
-              padding-left: 1rem;
-              padding-right: 1rem;
-            }
             .contact-textinput {
               align-self: center;
               margin-left: 0px;
@@ -944,7 +925,13 @@ const Contact = (props) => {
               padding-top: var(--dl-space-space-halfunit);
               padding-bottom: var(--dl-space-space-halfunit);
             }
-            .contact-textarea1 {
+            .contact-textinput2 {
+              align-self: center;
+              margin-left: 0px;
+              padding-top: var(--dl-space-space-halfunit);
+              padding-bottom: var(--dl-space-space-halfunit);
+            }
+            .contact-textarea {
               width: 250px;
               height: 100px;
               align-self: center;
