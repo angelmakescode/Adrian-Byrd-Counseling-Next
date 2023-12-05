@@ -395,7 +395,7 @@ const GoalCoaching = (props) => {
             min-height: auto;
             align-items: center;
             border-radius: 25px;
-            margin-bottom: var(--dl-space-space-threeunits);
+            margin-bottom: 0px;
             flex-direction: row;
             justify-content: space-between;
           }
@@ -642,7 +642,7 @@ const GoalCoaching = (props) => {
           }
           @media (max-width: 991px) {
             .goal-coaching-hero {
-              flex-direction: column;
+              flex-direction: row;
             }
             .goal-coaching-container01 {
               align-items: stretch;
@@ -672,7 +672,7 @@ const GoalCoaching = (props) => {
               align-self: stretch;
             }
             .goal-coaching-hero1 {
-              flex-direction: column;
+              flex-direction: row;
             }
             .goal-coaching-image1 {
               margin-bottom: var(--dl-space-space-twounits);
@@ -686,6 +686,7 @@ const GoalCoaching = (props) => {
             }
             .goal-coaching-text03 {
               text-align: center;
+              margin-left: var(--dl-space-space-unit);
             }
             .goal-coaching-btn-group1 {
               align-self: center;
@@ -745,6 +746,7 @@ const GoalCoaching = (props) => {
             .goal-coaching-hero {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
+              flex-direction: column;
             }
             .goal-coaching-container01 {
               width: 100%;
@@ -774,6 +776,7 @@ const GoalCoaching = (props) => {
             .goal-coaching-hero1 {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
+              flex-direction: column;
             }
             .goal-coaching-image1 {
               width: 50%;
@@ -786,6 +789,7 @@ const GoalCoaching = (props) => {
               width: 100%;
             }
             .goal-coaching-text22 {
+              align-self: center;
               margin-bottom: var(--dl-space-space-unit);
             }
             .goal-coaching-text23 {

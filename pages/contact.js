@@ -105,15 +105,30 @@ const Contact = (props) => {
               </div>
             </div>
           </div>
-          <img
-            alt="image"
-            src="https://i.imgur.com/cQeukUw.jpg"
-            className="contact-image"
-          />
         </div>
-        <div className="contact-container07">
-          <div className="contact-container08">
-            <div className="contact-container09">
+        <div className="contact-hero1">
+          <div className="contact-container07">
+            <div>
+              <div className="contact-container09">
+                <Script
+                  html={`<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQzxIPlQD_sSbibQHRFmN4vRsPb5rQaRboSSG0Xa9Xj_Xydg/viewform?embedded=true" width="450" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`}
+                ></Script>
+              </div>
+            </div>
+          </div>
+          <div className="contact-container10">
+            <div className="contact-container11">
+              <div className="contact-container12">
+                <Script
+                  html={`<div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5130%20Hickory%20Point%20Frontage%20Road%20Suite%20219%20in%20Decatur%20IL,%2062526+(Adrian%20Byrd%20Counseling)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe></div>`}
+                ></Script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="contact-container13">
+          <div className="contact-container14">
+            <div className="contact-container15">
               <span className="contact-text10">EMAIL</span>
               <a
                 href="mailto:adrian@adrianbyrdcounseling.com?subject="
@@ -122,13 +137,13 @@ const Contact = (props) => {
                 adrian@adrianbyrdcounseling.com
               </a>
             </div>
-            <div className="contact-container10">
+            <div className="contact-container16">
               <span className="contact-text11">CALL</span>
               <a href="tel:(217) 358-4548" className="contact-link01">
                 (217) 358-4548
               </a>
             </div>
-            <div className="contact-container11">
+            <div className="contact-container17">
               <span className="contact-text12">OFFICE LOCATION</span>
               <span className="contact-text13">
                 <a
@@ -179,7 +194,7 @@ const Contact = (props) => {
               </svg>
             </a>
           </Link>
-          <div className="contact-container12">
+          <div className="contact-container18">
             <a href="tel:(217) 358-4548" className="contact-link08">
               (217) 358-4548
             </a>
@@ -199,7 +214,7 @@ const Contact = (props) => {
               </a>
             </div>
           </div>
-          <div className="contact-container13">
+          <div className="contact-container19">
             <a
               href="mailto:adrian@adrianbyrdcounseling.com?subject="
               className="contact-link10"
@@ -225,7 +240,7 @@ const Contact = (props) => {
           .contact-hero {
             width: 100%;
             height: auto;
-            display: flex;
+            display: none;
             max-width: var(--dl-size-size-maxwidth);
             min-height: 100%;
             align-items: center;
@@ -430,19 +445,60 @@ const Contact = (props) => {
           .contact-container06 {
             display: contents;
           }
-          .contact-image {
-            width: 100px;
-            display: none;
-            object-fit: cover;
+          .contact-hero1 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            max-width: var(--dl-size-size-maxwidth);
+            min-height: 100%;
+            align-items: center;
+            padding-top: var(--dl-space-space-unit);
+            padding-left: var(--dl-space-space-oneandhalfunits);
+            padding-right: var(--dl-space-space-oneandhalfunits);
+            flex-direction: row;
+            padding-bottom: var(--dl-space-space-unit);
+            justify-content: center;
           }
           .contact-container07 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: space-between;
+            flex-direction: column;
+          }
+          .contact-container09 {
+            display: contents;
+          }
+          .contact-container10 {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-self: center;
+            margin-top: 0px;
+            align-items: stretch;
+            margin-right: 0px;
+            border-radius: 25px;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .contact-container11 {
+            width: 100%;
+            height: 100%;
+            margin-left: var(--dl-space-space-twounits);
+            border-radius: 25px;
+          }
+          .contact-container12 {
+            display: contents;
+          }
+          .contact-container13 {
             width: 100%;
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
             align-items: flex-start;
             justify-content: center;
           }
-          .contact-container08 {
+          .contact-container14 {
             flex: 2;
             width: 50%;
             display: flex;
@@ -451,7 +507,7 @@ const Contact = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .contact-container09 {
+          .contact-container15 {
             flex: 1;
             height: 250px;
             display: flex;
@@ -469,7 +525,7 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-beige);
           }
-          .contact-container09:hover {
+          .contact-container15:hover {
             transform: scale(1.02);
           }
           .contact-text10 {
@@ -487,7 +543,7 @@ const Contact = (props) => {
             margin-bottom: var(--dl-space-space-threeunits);
             text-decoration: none;
           }
-          .contact-container10 {
+          .contact-container16 {
             flex: 1;
             color: #ffffff;
             height: 250px;
@@ -506,7 +562,7 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-beige);
           }
-          .contact-container10:hover {
+          .contact-container16:hover {
             transform: scale(1.02);
           }
           .contact-text11 {
@@ -526,7 +582,7 @@ const Contact = (props) => {
             margin-bottom: var(--dl-space-space-threeunits);
             text-decoration: underline;
           }
-          .contact-container11 {
+          .contact-container17 {
             flex: 1;
             height: 250px;
             display: flex;
@@ -546,7 +602,7 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-beige);
           }
-          .contact-container11:hover {
+          .contact-container17:hover {
             transform: scale(1.02);
           }
           .contact-text12 {
@@ -605,7 +661,7 @@ const Contact = (props) => {
             align-self: flex-start;
             text-decoration: none;
           }
-          .contact-container12 {
+          .contact-container18 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -633,7 +689,7 @@ const Contact = (props) => {
             height: var(--dl-size-size-small);
             text-decoration: none;
           }
-          .contact-container13 {
+          .contact-container19 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -714,11 +770,30 @@ const Contact = (props) => {
               height: 100%;
               align-self: center;
             }
-            .contact-container07 {
+            .contact-hero1 {
+              height: auto;
+              flex-direction: column;
+            }
+            .contact-container10 {
+              width: 95%;
+              height: 100%;
+              align-self: center;
+              margin-top: var(--dl-space-space-unit);
+              align-items: center;
+              margin-right: 0px;
+              margin-bottom: var(--dl-space-space-unit);
+              padding-right: 0px;
+            }
+            .contact-container11 {
+              width: 100%;
+              height: 100%;
+              align-self: center;
+            }
+            .contact-container13 {
               align-items: center;
               flex-direction: column;
             }
-            .contact-container08 {
+            .contact-container14 {
               width: 100%;
             }
             .contact-text10 {
@@ -830,23 +905,40 @@ const Contact = (props) => {
               width: 100%;
               height: 613px;
             }
-            .contact-container07 {
+            .contact-hero1 {
+              width: 100%;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .contact-container08 {
+            .contact-container07 {
+              width: 95%;
+            }
+            .contact-container10 {
+              height: auto;
+              padding-left: 0px;
+              background-color: transparent;
+            }
+            .contact-container11 {
+              width: 100%;
+              height: 613px;
+            }
+            .contact-container13 {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
+            .contact-container14 {
               flex-direction: column;
             }
-            .contact-container09 {
+            .contact-container15 {
               width: 100%;
               margin-left: var(--dl-space-space-threeunits);
               margin-right: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .contact-container10 {
+            .contact-container16 {
               width: 100%;
             }
-            .contact-container11 {
+            .contact-container17 {
               width: 100%;
               margin-left: var(--dl-space-space-threeunits);
               margin-right: var(--dl-space-space-threeunits);
@@ -866,7 +958,7 @@ const Contact = (props) => {
             .contact-icon {
               align-self: center;
             }
-            .contact-container12 {
+            .contact-container18 {
               align-items: center;
               flex-direction: column;
               justify-content: space-between;
@@ -877,7 +969,7 @@ const Contact = (props) => {
             .contact-icon2 {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .contact-container13 {
+            .contact-container19 {
               align-items: center;
               flex-direction: column;
               justify-content: space-between;
@@ -952,19 +1044,23 @@ const Contact = (props) => {
               padding-left: 0px;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .contact-image {
-              width: 100%;
-              display: none;
-              box-shadow: 5px 5px 10px 0px #757272;
-              border-radius: 25px;
+            .contact-hero1 {
+              padding-top: var(--dl-space-space-twounits);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-twounits);
             }
-            .contact-container07 {
+            .contact-container10 {
+              padding-left: 0px;
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .contact-container13 {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: 0px;
             }
-            .contact-container08 {
+            .contact-container14 {
               height: 634px;
             }
             .contact-footer {
@@ -977,7 +1073,7 @@ const Contact = (props) => {
             .contact-icon {
               align-self: center;
             }
-            .contact-container12 {
+            .contact-container18 {
               align-items: center;
               flex-direction: column;
               justify-content: space-between;
@@ -986,7 +1082,7 @@ const Contact = (props) => {
               text-align: center;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .contact-container13 {
+            .contact-container19 {
               align-items: center;
               flex-direction: column;
               justify-content: space-between;
