@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 const About = (props) => {
   return (
@@ -10,7 +11,15 @@ const About = (props) => {
       <div className="about-container">
         <Head>
           <title>About - Adrian Byrd Counseling</title>
+          <meta
+            name="description"
+            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
+          />
           <meta property="og:title" content="About - Adrian Byrd Counseling" />
+          <meta
+            property="og:description"
+            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
+          />
         </Head>
         <Header></Header>
         <div className="about-hero">
@@ -208,47 +217,7 @@ const About = (props) => {
             </div>
           </div>
         </div>
-        <footer className="about-footer">
-          <div className="about-separator"></div>
-          <Link href="/about">
-            <a className="about-link3">
-              <svg viewBox="0 0 1024 1024" className="about-icon">
-                <path d="M243.499 542.165l225.835-225.835v494.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-494.336l225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-298.667-298.667c-4.096-4.096-8.789-7.168-13.824-9.259-5.205-2.176-10.795-3.243-16.341-3.243-10.923 0-21.845 4.181-30.165 12.501l-298.667 298.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0z"></path>
-              </svg>
-            </a>
-          </Link>
-          <div className="about-container5">
-            <a href="tel:2173584549" className="about-link4">
-              (217) 358-4548
-            </a>
-            <div className="about-icon-group">
-              <a
-                href="https://www.facebook.com/adrianbyrdcounseling/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="about-link5"
-              >
-                <svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  className="about-icon2"
-                >
-                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="about-container6">
-            <a
-              href="mailto:adrian@adrianbyrdcounseling.com?subject="
-              className="about-link6"
-            >
-              <span className="about-text47">
-                adrian@adrianbyrdcounseling.com
-              </span>
-              <br className="about-text48"></br>
-            </a>
-          </div>
-        </footer>
+        <Footer rootClassName="footer-root-class-name"></Footer>
       </div>
       <style jsx>
         {`
@@ -623,92 +592,6 @@ const About = (props) => {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
-          .about-footer {
-            width: 100%;
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: center;
-            padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
-            justify-content: space-between;
-          }
-          .about-separator {
-            flex: 0 0 auto;
-            width: 100%;
-            height: 0px;
-            display: flex;
-            margin-top: var(--dl-space-space-twounits);
-            align-items: flex-start;
-            margin-left: 0px;
-            border-color: #d9d9d9;
-            border-style: solid;
-            border-width: 1px;
-            margin-right: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-            flex-direction: row;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-          }
-          .about-link3 {
-            display: contents;
-          }
-          .about-icon {
-            width: 34px;
-            height: 34px;
-            align-self: flex-start;
-            text-decoration: none;
-          }
-          .about-container5 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .about-link4 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-            text-decoration: none;
-          }
-          .about-icon-group {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .about-link5 {
-            display: contents;
-          }
-          .about-icon2 {
-            width: var(--dl-size-size-small);
-            height: var(--dl-size-size-small);
-            text-decoration: none;
-          }
-          .about-container6 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .about-link6 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-            text-decoration: none;
-          }
-          .about-text48 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-          }
           @media (max-width: 991px) {
             .about-hero {
               flex-direction: column;
@@ -1057,42 +940,6 @@ const About = (props) => {
             .about-link2 {
               font-size: 16px;
             }
-            .about-footer {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
-            .about-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-left: 0px;
-              margin-right: 0px;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .about-icon {
-              align-self: center;
-            }
-            .about-container5 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .about-link4 {
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .about-icon2 {
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .about-container6 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .about-link6 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .about-text47 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
           }
           @media (max-width: 479px) {
             .about-hero {
@@ -1309,38 +1156,6 @@ const About = (props) => {
               align-self: center;
               font-style: normal;
               font-weight: 700;
-            }
-            .about-footer {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-unit);
-            }
-            .about-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .about-container5 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .about-link4 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .about-container6 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .about-link6 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .about-text47 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
           }
         `}

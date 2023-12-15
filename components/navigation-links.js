@@ -19,8 +19,11 @@ const NavigationLinks = (props) => {
         <Link href="/info">
           <a className="navigation-links-link3">{props.text3}</a>
         </Link>
+        <Link href="/goal-coaching">
+          <a className="navigation-links-link4">{props.text32}</a>
+        </Link>
         <Link href="/contact">
-          <a className="navigation-links-link4">{props.text31}</a>
+          <a className="navigation-links-link5">{props.text31}</a>
         </Link>
       </nav>
       <style jsx>
@@ -59,6 +62,13 @@ const NavigationLinks = (props) => {
             text-decoration: none;
           }
           .navigation-links-link4 {
+            font-style: normal;
+            font-family: Raleway;
+            font-weight: 600;
+            margin-left: var(--dl-space-space-threeunits);
+            text-decoration: none;
+          }
+          .navigation-links-link5 {
             display: none;
             font-style: normal;
             font-family: Raleway;
@@ -96,6 +106,10 @@ const NavigationLinks = (props) => {
               font-size: 14px;
               margin-left: var(--dl-space-space-twounits);
             }
+            .navigation-links-link5 {
+              font-size: 14px;
+              margin-left: var(--dl-space-space-twounits);
+            }
             .navigation-links-root-class-name8 {
               margin: 50px;
               margin-top: 0px;
@@ -128,6 +142,10 @@ const NavigationLinks = (props) => {
               margin-left: 0;
               margin-bottom: var(--dl-space-space-unit);
             }
+            .navigation-links-link5 {
+              margin-left: 0;
+              margin-bottom: var(--dl-space-space-unit);
+            }
           }
         `}
       </style>
@@ -142,6 +160,7 @@ NavigationLinks.defaultProps = {
   text21: 'TEAM',
   text: 'HOME',
   text5: 'ABOUT',
+  text32: 'GOAL COACHING',
   text31: 'CONTACT',
   text1: 'SERVICES',
   text3: 'INFO',
@@ -154,6 +173,7 @@ NavigationLinks.propTypes = {
   text21: PropTypes.string,
   text: PropTypes.string,
   text5: PropTypes.string,
+  text32: PropTypes.string,
   text31: PropTypes.string,
   text1: PropTypes.string,
   text3: PropTypes.string,

@@ -29,7 +29,7 @@ const Header = (props) => {
             href="https://doxy.me/abyrd"
             target="_blank"
             rel="noreferrer noopener"
-            className="header-link1 button"
+            className="header-link01 button"
           >
             <span className="header-text">{props.text}</span>
             <svg viewBox="0 0 1024 1024" className="header-icon">
@@ -37,7 +37,7 @@ const Header = (props) => {
             </svg>
           </a>
           <Link href="/contact">
-            <a className="header-link2 button">{props.button1}</a>
+            <a className="header-link02 button">{props.button1}</a>
           </Link>
         </div>
         <div data-thq="thq-dropdown" className="header-dropdown list-item">
@@ -58,7 +58,7 @@ const Header = (props) => {
                 className="header-dropdown-toggle1"
               >
                 <Link href="/">
-                  <a className="header-link3">HOME</a>
+                  <a className="header-link03">HOME</a>
                 </Link>
               </div>
             </li>
@@ -68,7 +68,7 @@ const Header = (props) => {
                 className="header-dropdown-toggle2"
               >
                 <Link href="/about">
-                  <a className="header-link4">ABOUT</a>
+                  <a className="header-link04">ABOUT</a>
                 </Link>
               </div>
             </li>
@@ -78,7 +78,7 @@ const Header = (props) => {
                 className="header-dropdown-toggle3"
               >
                 <Link href="/team">
-                  <a className="header-link5">TEAM</a>
+                  <a className="header-link05">TEAM</a>
                 </Link>
               </div>
             </li>
@@ -88,7 +88,7 @@ const Header = (props) => {
                 className="header-dropdown-toggle4"
               >
                 <Link href="/info">
-                  <a className="header-link6">INFO</a>
+                  <a className="header-link06">INFO</a>
                 </Link>
               </div>
             </li>
@@ -113,7 +113,7 @@ const Header = (props) => {
                 className="header-dropdown-toggle6"
               >
                 <Link href="/contact">
-                  <a className="header-link7">CONTACT</a>
+                  <a className="header-link07">CONTACT</a>
                 </Link>
               </div>
             </li>
@@ -121,6 +121,16 @@ const Header = (props) => {
               <div
                 data-thq="thq-dropdown-toggle"
                 className="header-dropdown-toggle7"
+              >
+                <Link href="/goal-coaching">
+                  <a className="header-link08">GOAL COACHING</a>
+                </Link>
+              </div>
+            </li>
+            <li data-thq="thq-dropdown" className="header-dropdown8 list-item">
+              <div
+                data-thq="thq-dropdown-toggle"
+                className="header-dropdown-toggle8"
               >
                 <a
                   href="https://www.facebook.com/adrianbyrdcounseling"
@@ -169,7 +179,7 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .header-link1 {
+          .header-link01 {
             display: flex;
             font-size: 1rem;
             box-shadow: 5px 5px 10px 0px #a7a2a2;
@@ -192,7 +202,7 @@ const Header = (props) => {
             border-left-width: 0px;
             border-right-width: 0px;
           }
-          .header-link1:hover {
+          .header-link01:hover {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
@@ -201,7 +211,7 @@ const Header = (props) => {
             height: 24px;
             display: none;
           }
-          .header-link2 {
+          .header-link02 {
             font-size: 1rem;
             box-shadow: 5px 5px 10px 0px #a7a2a2;
             font-style: normal;
@@ -221,7 +231,7 @@ const Header = (props) => {
             border-left-width: 0px;
             border-right-width: 0px;
           }
-          .header-link2:hover {
+          .header-link02:hover {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
@@ -293,7 +303,7 @@ const Header = (props) => {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
-          .header-link3 {
+          .header-link03 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -329,7 +339,7 @@ const Header = (props) => {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
-          .header-link4 {
+          .header-link04 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -365,7 +375,7 @@ const Header = (props) => {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
-          .header-link5 {
+          .header-link05 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -401,7 +411,7 @@ const Header = (props) => {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
-          .header-link6 {
+          .header-link06 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -475,7 +485,7 @@ const Header = (props) => {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
           }
-          .header-link7 {
+          .header-link07 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -510,6 +520,44 @@ const Header = (props) => {
             background-color: var(--dl-color-gray-green);
             border-top-left-radius: 0;
             border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+          .header-link08 {
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+            font-style: normal;
+            font-family: Raleway;
+            font-weight: 600;
+            text-decoration: none;
+          }
+          .header-dropdown8 {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+          }
+          .header-dropdown-toggle8 {
+            fill: #595959;
+            color: var(--dl-color-gray-black);
+            width: 100%;
+            display: inline-flex;
+            transition: 0.3s;
+            align-items: center;
+            padding-top: var(--dl-space-space-halfunit);
+            padding-left: var(--dl-space-space-unit);
+            padding-right: var(--dl-space-space-unit);
+            padding-bottom: var(--dl-space-space-halfunit);
+            border-top-right-radius: 0;
+          }
+          .header-dropdown-toggle8:hover {
+            fill: #fff;
+            color: var(--dl-color-gray-beige);
+            border-radius: 22px;
+            background-color: var(--dl-color-gray-green);
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
             border-bottom-left-radius: 25;
             border-bottom-right-radius: 25;
           }
@@ -534,7 +582,7 @@ const Header = (props) => {
               flex-direction: row;
               justify-content: center;
             }
-            .header-link1 {
+            .header-link01 {
               font-size: 0.9rem;
               font-style: normal;
               text-align: center;
@@ -552,7 +600,7 @@ const Header = (props) => {
               height: auto;
               display: flex;
             }
-            .header-link2 {
+            .header-link02 {
               font-size: 0.9rem;
               padding-left: var(--dl-space-space-halfunit);
               padding-right: var(--dl-space-space-halfunit);
@@ -644,6 +692,19 @@ const Header = (props) => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-unit);
             }
+            .header-link08 {
+              font-size: 14px;
+              font-style: normal;
+              font-family: Raleway;
+              font-weight: 600;
+              text-decoration: none;
+            }
+            .header-dropdown-toggle8 {
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-oneandhalfunits);
+              padding-right: var(--dl-space-space-oneandhalfunits);
+              padding-bottom: var(--dl-space-space-unit);
+            }
             .header-fb {
               fill: var(--dl-color-gray-black);
               width: 25px;
@@ -658,13 +719,13 @@ const Header = (props) => {
               padding-bottom: var(--dl-space-space-unit);
               justify-content: space-between;
             }
-            .header-link1 {
+            .header-link01 {
               font-size: 12px;
               align-self: center;
               font-style: normal;
               font-weight: 700;
             }
-            .header-link2 {
+            .header-link02 {
               font-size: 12px;
               align-self: center;
               font-style: normal;
@@ -709,7 +770,7 @@ Header.defaultProps = {
   HOME: 'HOME',
   TEAM: 'TEAM',
   text1: 'MENU',
-  image_src: '/adrian-byrd-counseling-primary-logo-medium-1500h.png',
+  image_src: '/adrian-byrd-counseling-primary-logo-medium-1500h1.png',
   Register: 'CONTACT',
   ABOUT: 'ABOUT',
   button1: 'CONTACT',

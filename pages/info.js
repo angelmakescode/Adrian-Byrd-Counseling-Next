@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import FeatureCard11 from '../components/feature-card11'
+import Footer from '../components/footer'
 
 const Info = (props) => {
   return (
@@ -11,7 +12,15 @@ const Info = (props) => {
       <div className="info-container">
         <Head>
           <title>Info - Adrian Byrd Counseling</title>
+          <meta
+            name="description"
+            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
+          />
           <meta property="og:title" content="Info - Adrian Byrd Counseling" />
+          <meta
+            property="og:description"
+            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
+          />
         </Head>
         <Header></Header>
         <div className="info-hero">
@@ -720,52 +729,7 @@ const Info = (props) => {
             </div>
           </div>
         </div>
-        <footer className="info-footer">
-          <div className="info-separator"></div>
-          <Link href="/info">
-            <a className="info-link5">
-              <svg viewBox="0 0 1024 1024" className="info-icon16">
-                <path d="M243.499 542.165l225.835-225.835v494.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-494.336l225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-298.667-298.667c-4.096-4.096-8.789-7.168-13.824-9.259-5.205-2.176-10.795-3.243-16.341-3.243-10.923 0-21.845 4.181-30.165 12.501l-298.667 298.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0z"></path>
-              </svg>
-            </a>
-          </Link>
-          <div className="info-container18">
-            <a href="tel:(217) 358-4548" className="info-link6">
-              (217) 358-4548
-            </a>
-            <div className="info-icon-group">
-              <img
-                alt="image"
-                src="https://personcenteredtech.com/wp-content/uploads/2020/09/PT_articlesize.jpg"
-                className="info-image1"
-              />
-              <a
-                href="https://www.facebook.com/adrianbyrdcounseling/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="info-link7"
-              >
-                <svg
-                  viewBox="0 0 602.2582857142856 1024"
-                  className="info-icon18"
-                >
-                  <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="info-container19">
-            <a
-              href="mailto:adrian@adrianbyrdcounseling.com?subject="
-              className="info-link8"
-            >
-              <span className="info-text133">
-                adrian@adrianbyrdcounseling.com
-              </span>
-              <span></span>
-            </a>
-          </div>
-        </footer>
+        <Footer></Footer>
       </div>
       <style jsx>
         {`
@@ -2273,94 +2237,6 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-footer {
-            width: 100%;
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: center;
-            padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
-            justify-content: space-between;
-          }
-          .info-separator {
-            flex: 0 0 auto;
-            width: 100%;
-            height: 0px;
-            display: flex;
-            margin-top: var(--dl-space-space-twounits);
-            align-items: flex-start;
-            margin-left: 0px;
-            border-color: #d9d9d9;
-            border-style: solid;
-            border-width: 1px;
-            margin-right: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-            flex-direction: row;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-          }
-          .info-link5 {
-            display: contents;
-          }
-          .info-icon16 {
-            width: 34px;
-            height: 34px;
-            align-self: flex-start;
-            text-decoration: none;
-          }
-          .info-container18 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .info-link6 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-            text-decoration: none;
-          }
-          .info-icon-group {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .info-image1 {
-            width: 45px;
-            display: none;
-            object-fit: cover;
-            margin-right: var(--dl-space-space-twounits);
-            border-radius: var(--dl-radius-radius-radius4);
-          }
-          .info-link7 {
-            display: contents;
-          }
-          .info-icon18 {
-            width: var(--dl-size-size-small);
-            height: var(--dl-size-size-small);
-            text-decoration: none;
-          }
-          .info-container19 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .info-link8 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-            text-decoration: none;
-          }
           @media (max-width: 991px) {
             .info-hero {
               flex-direction: column;
@@ -2700,47 +2576,6 @@ const Info = (props) => {
             .info-dropdown09 {
               width: 400px;
             }
-            .info-footer {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
-            .info-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-left: 0px;
-              margin-right: 0px;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .info-icon16 {
-              align-self: center;
-            }
-            .info-container18 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .info-link6 {
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .info-image1 {
-              margin-top: var(--dl-space-space-halfunit);
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .info-icon18 {
-              margin-top: var(--dl-space-space-halfunit);
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .info-container19 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .info-link8 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .info-text133 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
           }
           @media (max-width: 479px) {
             .info-hero {
@@ -2902,38 +2737,6 @@ const Info = (props) => {
             }
             .info-dropdown09 {
               width: 400px;
-            }
-            .info-footer {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-unit);
-            }
-            .info-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .info-container18 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .info-link6 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .info-container19 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .info-link8 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .info-text133 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
           }
         `}

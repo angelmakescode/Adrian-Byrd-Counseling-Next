@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 const Home = (props) => {
   return (
@@ -10,7 +11,15 @@ const Home = (props) => {
       <div className="home-container">
         <Head>
           <title>Adrian Byrd Counseling</title>
+          <meta
+            name="description"
+            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
+          />
           <meta property="og:title" content="Adrian Byrd Counseling" />
+          <meta
+            property="og:description"
+            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
+          />
         </Head>
         <Header rootClassName="header-root-class-name"></Header>
         <div className="home-hero">
@@ -101,7 +110,7 @@ const Home = (props) => {
             </div>
           </div>
           <img
-            alt="image"
+            alt="Adrian M. Byrd, LCSW"
             src="https://i.imgur.com/VY5OeW8.jpg"
             className="home-image1"
           />
@@ -280,49 +289,7 @@ const Home = (props) => {
           </div>
           <span className="home-text70">Helen Keller</span>
         </div>
-        <footer className="home-footer">
-          <footer className="home-footer1">
-            <div className="home-separator"></div>
-            <Link href="/">
-              <a className="home-link10">
-                <svg viewBox="0 0 1024 1024" className="home-icon">
-                  <path d="M243.499 542.165l225.835-225.835v494.336c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-494.336l225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-298.667-298.667c-4.096-4.096-8.789-7.168-13.824-9.259-5.205-2.176-10.795-3.243-16.341-3.243-10.923 0-21.845 4.181-30.165 12.501l-298.667 298.667c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0z"></path>
-                </svg>
-              </a>
-            </Link>
-            <div className="home-container12">
-              <a href="tel:(217) 358-4548" className="home-link11">
-                (217) 358-4548
-              </a>
-              <div className="home-icon-group">
-                <a
-                  href="https://www.facebook.com/adrianbyrdcounseling/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="home-link12"
-                >
-                  <svg
-                    viewBox="0 0 602.2582857142856 1024"
-                    className="home-icon2"
-                  >
-                    <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div className="home-container13">
-              <a
-                href="mailto:adrian@adrianbyrdcounseling.com?subject="
-                className="home-link13"
-              >
-                <span className="home-text71">
-                  adrian@adrianbyrdcounseling.com
-                </span>
-                <span></span>
-              </a>
-            </div>
-          </footer>
-        </footer>
+        <Footer></Footer>
       </div>
       <style jsx>
         {`
@@ -1050,99 +1017,6 @@ const Home = (props) => {
             font-weight: 600;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-footer {
-            width: 100%;
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: flex-start;
-            padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
-            justify-content: center;
-          }
-          .home-footer1 {
-            width: 100%;
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: center;
-            padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
-            justify-content: space-between;
-          }
-          .home-separator {
-            flex: 0 0 auto;
-            width: 100%;
-            height: 0px;
-            display: flex;
-            margin-top: var(--dl-space-space-twounits);
-            align-items: flex-start;
-            margin-left: 0px;
-            border-color: #d9d9d9;
-            border-style: solid;
-            border-width: 1px;
-            margin-right: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-            flex-direction: row;
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-          }
-          .home-link10 {
-            display: contents;
-          }
-          .home-icon {
-            width: 34px;
-            height: 34px;
-            align-self: flex-start;
-            text-decoration: none;
-          }
-          .home-container12 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-link11 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-            text-decoration: underline;
-          }
-          .home-icon-group {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-link12 {
-            display: contents;
-          }
-          .home-icon2 {
-            width: var(--dl-size-size-small);
-            height: var(--dl-size-size-small);
-            text-decoration: none;
-          }
-          .home-container13 {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-link13 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-            text-decoration: none;
-          }
           @media (max-width: 991px) {
             .home-hero {
               flex-direction: column;
@@ -1224,9 +1098,6 @@ const Home = (props) => {
             .home-text67 {
               margin-top: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-threeunits);
-            }
-            .home-footer {
-              flex-direction: column;
             }
           }
           @media (max-width: 767px) {
@@ -1324,44 +1195,6 @@ const Home = (props) => {
             .home-testimonial2 {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
-            }
-            .home-footer {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
-            .home-footer1 {
-              padding-top: 0px;
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
-            .home-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-left: 0px;
-              margin-right: 0px;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-icon {
-              align-self: center;
-            }
-            .home-container12 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .home-link11 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-container13 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .home-link13 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-text71 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
           }
           @media (max-width: 479px) {
@@ -1639,42 +1472,6 @@ const Home = (props) => {
             .home-text67 {
               width: auto;
               font-size: 1rem;
-            }
-            .home-footer {
-              padding: var(--dl-space-space-unit);
-              margin-top: 0px;
-            }
-            .home-footer1 {
-              padding: var(--dl-space-space-unit);
-            }
-            .home-separator {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-icon {
-              align-self: center;
-            }
-            .home-container12 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .home-link11 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-container13 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .home-link13 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-text71 {
-              text-align: center;
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
           }
         `}
