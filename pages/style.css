@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --dl-color-gray-grey: #72888cff;
   --dl-size-size-large: 144px;
@@ -11,11 +15,14 @@
   --dl-space-space-unit: 16px;
   --dl-color-gray-yellow: #f7d58bff;
   --dl-size-size-xxlarge: 288px;
+  --dl-color-scheme-black: #000000ff;
+  --dl-color-scheme-cream: #cec3bcff;
   --dl-size-size-maxwidth: 1400px;
   --dl-radius-radius-round: 50%;
   --dl-space-space-halfunit: 8px;
   --dl-space-space-sixunits: 96px;
   --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius1: 25px;
   --dl-radius-radius-radius2: 2px;
   --dl-radius-radius-radius4: 4px;
   --dl-radius-radius-radius8: 8px;
@@ -66,6 +73,27 @@
   display: flex !important;
   transform: none !important;
 }
+.button-primary {
+  color: var(--dl-color-scheme-cream);
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 700;
+  line-height: 1;
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: #914332ff;
+}
+.button-primary:hover {
+  color: var(--dl-color-scheme-black);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button-lg {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+}
 .Content {
   font-size: 16px;
   font-family: Inter;
@@ -81,4 +109,14 @@
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
+}
+
+
+@media(max-width: 479px) {
+  .button-primary {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+  }
 }
