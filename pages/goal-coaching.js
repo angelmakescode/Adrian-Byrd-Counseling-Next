@@ -29,9 +29,9 @@ const GoalCoaching = (props) => {
         <Header rootClassName="header-root-class-name3"></Header>
         <div className="goal-coaching-hero">
           <div className="goal-coaching-container1">
-            <h1 className="goal-coaching-text">
-              <span>
-                mAKE 2024 THE YEAR YOU
+            <span className="goal-coaching-text">
+              <span className="goal-coaching-text01">
+                MAKE 2024 THE YEAR YOU
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
@@ -39,8 +39,9 @@ const GoalCoaching = (props) => {
                 />
               </span>
               <span className="goal-coaching-text02">CRUSH YOUR GOALS</span>
-            </h1>
-            <span className="goal-coaching-text03">
+              <br className="goal-coaching-text03"></br>
+            </span>
+            <span className="goal-coaching-text04">
               With our coaching program you will:
             </span>
           </div>
@@ -58,26 +59,26 @@ const GoalCoaching = (props) => {
             className="goal-coaching-image1"
           />
           <div className="goal-coaching-container2">
-            <span className="goal-coaching-text04">
-              <span className="goal-coaching-text05">SIMPLE PRICING</span>
-              <br className="goal-coaching-text06"></br>
+            <span className="goal-coaching-text05">
+              <span className="goal-coaching-text06">SIMPLE PRICING</span>
               <br className="goal-coaching-text07"></br>
-              <span className="goal-coaching-text08">6 sessions</span>
-              <span className="goal-coaching-text09"> for $97/month</span>
-              <br className="goal-coaching-text10"></br>
+              <br className="goal-coaching-text08"></br>
+              <span className="goal-coaching-text09">6 sessions</span>
+              <span className="goal-coaching-text10"> for $97/month</span>
               <br className="goal-coaching-text11"></br>
-              <span className="goal-coaching-text12">12 sessions</span>
-              <span className="goal-coaching-text13"> for $177/month</span>
-              <br className="goal-coaching-text14"></br>
+              <br className="goal-coaching-text12"></br>
+              <span className="goal-coaching-text13">12 sessions</span>
+              <span className="goal-coaching-text14"> for $177/month</span>
               <br className="goal-coaching-text15"></br>
-              <span className="goal-coaching-text16">18 sessions</span>
-              <span className="goal-coaching-text17"> for $277/month</span>
-              <br className="goal-coaching-text18"></br>
+              <br className="goal-coaching-text16"></br>
+              <span className="goal-coaching-text17">18 sessions</span>
+              <span className="goal-coaching-text18"> for $277/month</span>
               <br className="goal-coaching-text19"></br>
-              <span className="goal-coaching-text20">
+              <br className="goal-coaching-text20"></br>
+              <span className="goal-coaching-text21">
                 All packages include unlimited messaging in between sessions
               </span>
-              <br className="goal-coaching-text21"></br>
+              <br className="goal-coaching-text22"></br>
             </span>
           </div>
         </div>
@@ -121,17 +122,26 @@ const GoalCoaching = (props) => {
             justify-content: center;
           }
           .goal-coaching-text {
-            font-size: 2rem;
+            width: 95%;
+            font-size: 1.3rem;
             align-self: flex-start;
             text-align: left;
             font-family: 'Raleway';
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-transform: uppercase;
+            font-weight: 500;
+          }
+          .goal-coaching-text01 {
+            font-size: 1.8rem;
+            font-weight: 700;
           }
           .goal-coaching-text02 {
             color: var(--dl-color-gray-green);
+            font-size: 1.8rem;
+            font-weight: 700;
           }
           .goal-coaching-text03 {
+            font-style: normal;
+          }
+          .goal-coaching-text04 {
             color: var(--dl-color-gray-black);
             font-size: 1.3rem;
             margin-top: var(--dl-space-space-halfunit);
@@ -180,7 +190,7 @@ const GoalCoaching = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .goal-coaching-text04 {
+          .goal-coaching-text05 {
             width: 95%;
             font-size: 1.3rem;
             align-self: center;
@@ -188,24 +198,21 @@ const GoalCoaching = (props) => {
             font-family: 'Raleway';
             font-weight: 500;
           }
-          .goal-coaching-text05 {
-            font-size: 1.8rem;
-            font-weight: 700;
-          }
           .goal-coaching-text06 {
             font-size: 1.8rem;
             font-weight: 700;
           }
           .goal-coaching-text07 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1.8rem;
+            font-weight: 700;
           }
           .goal-coaching-text08 {
             font-size: 1.5rem;
             font-weight: 600;
           }
           .goal-coaching-text09 {
-            font-style: normal;
+            font-size: 1.5rem;
+            font-weight: 600;
           }
           .goal-coaching-text10 {
             font-style: normal;
@@ -214,11 +221,11 @@ const GoalCoaching = (props) => {
             font-style: normal;
           }
           .goal-coaching-text12 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-style: normal;
           }
           .goal-coaching-text13 {
-            font-style: normal;
+            font-size: 1.5rem;
+            font-weight: 600;
           }
           .goal-coaching-text14 {
             font-style: normal;
@@ -227,11 +234,11 @@ const GoalCoaching = (props) => {
             font-style: normal;
           }
           .goal-coaching-text16 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-style: normal;
           }
           .goal-coaching-text17 {
-            font-style: normal;
+            font-size: 1.5rem;
+            font-weight: 600;
           }
           .goal-coaching-text18 {
             font-style: normal;
@@ -240,11 +247,14 @@ const GoalCoaching = (props) => {
             font-style: normal;
           }
           .goal-coaching-text20 {
+            font-style: normal;
+          }
+          .goal-coaching-text21 {
             font-size: 1.5rem;
             font-family: 'Raleway';
             font-weight: 600;
           }
-          .goal-coaching-text21 {
+          .goal-coaching-text22 {
             font-style: normal;
           }
           @media (max-width: 991px) {
@@ -261,9 +271,10 @@ const GoalCoaching = (props) => {
               justify-content: center;
             }
             .goal-coaching-text {
-              text-align: center;
+              text-align: left;
+              margin-left: var(--dl-space-space-unit);
             }
-            .goal-coaching-text03 {
+            .goal-coaching-text04 {
               color: var(--dl-color-gray-black);
               font-size: 1.3rem;
               text-align: center;
@@ -285,7 +296,7 @@ const GoalCoaching = (props) => {
               margin-bottom: var(--dl-space-space-twounits);
               padding-right: 0px;
             }
-            .goal-coaching-text04 {
+            .goal-coaching-text05 {
               text-align: left;
               margin-left: var(--dl-space-space-unit);
             }
@@ -300,9 +311,17 @@ const GoalCoaching = (props) => {
               width: 100%;
             }
             .goal-coaching-text {
-              margin-bottom: var(--dl-space-space-unit);
+              width: 92%;
+              text-align: center;
+              margin-left: 0px;
+              border-color: var(--dl-color-gray-black);
+              border-width: 1px;
+              padding-bottom: var(--dl-space-space-unit);
+              border-top-width: 0px;
+              border-left-width: 0px;
+              border-right-width: 0px;
             }
-            .goal-coaching-text03 {
+            .goal-coaching-text04 {
               color: var(--dl-color-gray-black);
               font-size: 1.3rem;
               font-family: Raleway;
@@ -323,7 +342,7 @@ const GoalCoaching = (props) => {
             .goal-coaching-image1 {
               width: 50%;
             }
-            .goal-coaching-text04 {
+            .goal-coaching-text05 {
               width: 92%;
               text-align: center;
               margin-left: 0px;
@@ -349,7 +368,15 @@ const GoalCoaching = (props) => {
               margin-left: 0px;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .goal-coaching-text03 {
+            .goal-coaching-text {
+              width: 92%;
+              align-self: center;
+              text-align: left;
+              margin-left: 0px;
+              border-color: var(--dl-color-gray-green);
+              padding-left: var(--dl-space-space-unit);
+            }
+            .goal-coaching-text04 {
               color: var(--dl-color-gray-black);
               font-size: 1.3rem;
               text-align: center;
@@ -371,7 +398,7 @@ const GoalCoaching = (props) => {
             .goal-coaching-container2 {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .goal-coaching-text04 {
+            .goal-coaching-text05 {
               width: 92%;
               align-self: center;
               text-align: left;
