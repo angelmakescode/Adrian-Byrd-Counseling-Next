@@ -80,6 +80,7 @@ const Form1 = (props) => {
           }
           .form1-text {
             color: var(--dl-color-gray-beige);
+            font-size: 2rem;
             font-family: 'Raleway';
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-green);

@@ -777,7 +777,9 @@ const Info = (props) => {
           }
           .info-text {
             font-size: 1.3em;
+            font-style: normal;
             font-family: Raleway;
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .info-text001 {
@@ -799,7 +801,9 @@ const Info = (props) => {
           }
           .info-text008 {
             font-size: 1.3em;
+            font-style: normal;
             font-family: Raleway;
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .info-text009 {
@@ -875,9 +879,11 @@ const Info = (props) => {
           .info-text020 {
             color: var(--dl-color-gray-beige);
             font-size: 2rem;
+            font-style: normal;
             margin-top: var(--dl-space-space-twounits);
             text-align: center;
             font-family: Raleway;
+            font-weight: 700;
             border-color: var(--dl-color-gray-beige);
             border-width: 1px;
             border-top-width: 0px;
@@ -946,8 +952,10 @@ const Info = (props) => {
           .info-text037 {
             font-size: 2rem;
             align-self: flex-start;
+            font-style: normal;
             text-align: left;
             font-family: Raleway;
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-unit);
             text-transform: uppercase;
           }
@@ -1216,7 +1224,10 @@ const Info = (props) => {
             padding-bottom: var(--dl-space-space-halfunit);
           }
           .info-text054 {
+            font-size: 2rem;
+            font-style: normal;
             font-family: Raleway;
+            font-weight: 700;
           }
           .info-container09 {
             width: 95%;
