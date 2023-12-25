@@ -193,7 +193,7 @@ const Form1 = (props) => {
 }
 
 Form1.defaultProps = {
-  heading: "Don't wait. Enroll today!",
+  heading: 'Leave A Message',
   textinput_placeholder: 'email address',
   textinput_placeholder1: 'phone number',
   textarea_placeholder: 'message',
