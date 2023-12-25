@@ -162,6 +162,12 @@ const Contact = (props) => {
               placeholder="phone number"
               className="contact-textinput6 input"
             />
+            <input
+              type="text"
+              name="message"
+              placeholder="message"
+              className="contact-textinput7 input"
+            />
             <button
               name="goal button"
               type="submit"
@@ -501,6 +507,7 @@ const Contact = (props) => {
           }
           .contact-text10 {
             color: var(--dl-color-gray-beige);
+            font-family: 'Raleway';
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-green);
           }
@@ -530,6 +537,12 @@ const Contact = (props) => {
           }
           .contact-textinput6 {
             width: 400px;
+            border-width: 0px;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .contact-textinput7 {
+            width: 400px;
+            height: 150px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
@@ -1041,6 +1054,9 @@ const Contact = (props) => {
               width: 325px;
             }
             .contact-textinput6 {
+              width: 325px;
+            }
+            .contact-textinput7 {
               width: 325px;
             }
             .contact-button1 {
