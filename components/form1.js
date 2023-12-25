@@ -181,6 +181,9 @@ const Form1 = (props) => {
             .form1-textinput3 {
               width: 325px;
             }
+            .form1-textarea {
+              width: 325px;
+            }
             .form1-button {
               font-size: 12px;
               font-style: normal;
