@@ -42,9 +42,9 @@ const Form = (props) => {
           <div className="form-container2">
             <input
               type="text"
-              placeholder={props.textinput_placeholder4}
               name="campaign"
               value="2024-goal-coaching"
+              placeholder={props.textinput_placeholder4}
               className="form-textinput4 input"
             />
             <button
@@ -193,25 +193,25 @@ const Form = (props) => {
 }
 
 Form.defaultProps = {
+  textinput_placeholder4: 'placeholder',
   button: 'get started',
   textinput_placeholder1: 'phone number',
   textinput_placeholder3: 'last name',
   textinput_placeholder2: 'first name',
   heading: "Don't wait. Enroll today!",
-  textinput_placeholder: 'email address',
   textarea_placeholder: 'message',
-  textinput_placeholder4: 'placeholder',
+  textinput_placeholder: 'email address',
 }
 
 Form.propTypes = {
+  textinput_placeholder4: PropTypes.string,
   button: PropTypes.string,
   textinput_placeholder1: PropTypes.string,
   textinput_placeholder3: PropTypes.string,
   textinput_placeholder2: PropTypes.string,
   heading: PropTypes.string,
-  textinput_placeholder: PropTypes.string,
   textarea_placeholder: PropTypes.string,
-  textinput_placeholder4: PropTypes.string,
+  textinput_placeholder: PropTypes.string,
 }
 
 export default Form

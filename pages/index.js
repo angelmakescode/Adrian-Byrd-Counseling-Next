@@ -417,8 +417,10 @@ const Home = (props) => {
           .home-text09 {
             font-size: 2.2rem;
             align-self: flex-start;
+            font-style: normal;
             text-align: left;
             font-family: Raleway;
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
           }
           .home-text10 {

@@ -40,15 +40,15 @@ const Form1 = (props) => {
             className="form1-textinput3 input"
           />
           <textarea
-            placeholder={props.textarea_placeholder}
             rows="4"
+            placeholder={props.textarea_placeholder}
             className="form1-textarea textarea"
           ></textarea>
           <input
             type="text"
-            placeholder={props.textinput_placeholder2}
             name="campaign"
             value="contact-us"
+            placeholder={props.textinput_placeholder2}
             className="form1-textinput4 input"
           />
           <button
@@ -193,25 +193,25 @@ const Form1 = (props) => {
 }
 
 Form1.defaultProps = {
-  heading: 'Leave A Message',
-  textinput_placeholder: 'email address',
   textinput_placeholder1: 'phone number',
-  textarea_placeholder: 'message',
-  textinput_placeholder2: 'placeholder',
-  button: 'get started',
-  textinput_placeholder3: 'first name',
   textinput_placeholder4: 'last name',
+  textinput_placeholder: 'email address',
+  textinput_placeholder2: 'placeholder',
+  textarea_placeholder: 'message',
+  textinput_placeholder3: 'first name',
+  button: 'get started',
+  heading: 'Leave A Message',
 }
 
 Form1.propTypes = {
-  heading: PropTypes.string,
-  textinput_placeholder: PropTypes.string,
   textinput_placeholder1: PropTypes.string,
-  textarea_placeholder: PropTypes.string,
-  textinput_placeholder2: PropTypes.string,
-  button: PropTypes.string,
-  textinput_placeholder3: PropTypes.string,
   textinput_placeholder4: PropTypes.string,
+  textinput_placeholder: PropTypes.string,
+  textinput_placeholder2: PropTypes.string,
+  textarea_placeholder: PropTypes.string,
+  textinput_placeholder3: PropTypes.string,
+  button: PropTypes.string,
+  heading: PropTypes.string,
 }
 
 export default Form1
