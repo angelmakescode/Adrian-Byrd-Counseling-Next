@@ -713,6 +713,7 @@ const Header = (props) => {
           }
           @media (max-width: 479px) {
             .header-header {
+              width: 85%;
               padding-top: var(--dl-space-space-unit);
               padding-left: var(--dl-space-space-halfunit);
               padding-right: var(--dl-space-space-halfunit);
