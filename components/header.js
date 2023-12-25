@@ -122,7 +122,7 @@ const Header = (props) => {
                 data-thq="thq-dropdown-toggle"
                 className="header-dropdown-toggle7"
               >
-                <Link href="/goal-coaching-old">
+                <Link href="/goal-coaching">
                   <a className="header-link08">GOAL COACHING</a>
                 </Link>
               </div>
