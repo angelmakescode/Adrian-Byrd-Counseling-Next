@@ -112,8 +112,8 @@ const Header = (props) => {
                 data-thq="thq-dropdown-toggle"
                 className="header-dropdown-toggle6"
               >
-                <Link href="/contact">
-                  <a className="header-link07">CONTACT</a>
+                <Link href="/goal-coaching">
+                  <a className="header-link07">GOAL COACHING</a>
                 </Link>
               </div>
             </li>
@@ -122,8 +122,8 @@ const Header = (props) => {
                 data-thq="thq-dropdown-toggle"
                 className="header-dropdown-toggle7"
               >
-                <Link href="/goal-coaching">
-                  <a className="header-link08">GOAL COACHING</a>
+                <Link href="/contact">
+                  <a className="header-link08">CONTACT</a>
                 </Link>
               </div>
             </li>
@@ -686,18 +686,18 @@ const Header = (props) => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-unit);
             }
-            .header-dropdown-toggle7 {
-              padding-top: var(--dl-space-space-unit);
-              padding-left: var(--dl-space-space-oneandhalfunits);
-              padding-right: var(--dl-space-space-oneandhalfunits);
-              padding-bottom: var(--dl-space-space-unit);
-            }
-            .header-link08 {
+            .header-link07 {
               font-size: 14px;
               font-style: normal;
               font-family: Raleway;
               font-weight: 600;
               text-decoration: none;
+            }
+            .header-dropdown-toggle7 {
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-oneandhalfunits);
+              padding-right: var(--dl-space-space-oneandhalfunits);
+              padding-bottom: var(--dl-space-space-unit);
             }
             .header-dropdown-toggle8 {
               padding-top: var(--dl-space-space-unit);
