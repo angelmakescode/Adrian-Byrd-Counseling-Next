@@ -12,7 +12,7 @@ const Form1 = (props) => {
           enctype="application/x-www-form-urlencoded"
           className="form1-form"
         >
-          <h1 className="form1-text">{props.heading}</h1>
+          <h1 className="form1-text">{props.heading1}</h1>
           <div className="form1-container1">
             <input
               type="text"
@@ -81,9 +81,17 @@ const Form1 = (props) => {
           .form1-text {
             color: var(--dl-color-gray-beige);
             font-size: 2rem;
-            font-family: 'Raleway';
+            font-style: normal;
+            margin-top: 0px;
+            text-align: center;
+            font-family: Raleway;
+            font-weight: 700;
+            border-color: var(--dl-color-gray-beige);
+            border-width: 1px;
             margin-bottom: var(--dl-space-space-twounits);
-            background-color: var(--dl-color-gray-green);
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
           }
           .form1-container1 {
             flex: 0 0 auto;
@@ -165,10 +173,6 @@ const Form1 = (props) => {
             .form1-form {
               width: 400px;
             }
-            .form1-text {
-              font-size: 1.8em;
-              text-align: left;
-            }
             .form1-textinput {
               width: 150px;
             }
@@ -205,6 +209,7 @@ Form1.defaultProps = {
   textinput_placeholder3: 'first name',
   button: 'get started',
   heading: 'LEAVE A MESSAGE',
+  heading1: 'LEAVE A MESSAGE',
 }
 
 Form1.propTypes = {
@@ -216,6 +221,7 @@ Form1.propTypes = {
   textinput_placeholder3: PropTypes.string,
   button: PropTypes.string,
   heading: PropTypes.string,
+  heading1: PropTypes.string,
 }
 
 export default Form1

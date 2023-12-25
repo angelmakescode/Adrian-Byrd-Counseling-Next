@@ -310,7 +310,7 @@ const Team = (props) => {
             justify-content: center;
           }
           .team-image {
-            width: 50%;
+            width: 70%;
             align-self: center;
             box-shadow: 5px 5px 10px 0px #8a8888;
             object-fit: cover;
@@ -366,7 +366,7 @@ const Team = (props) => {
             justify-content: center;
           }
           .team-image1 {
-            width: 50%;
+            width: 70%;
             align-self: center;
             box-shadow: 5px 5px 10px 0px #8a8888;
             object-fit: cover;
@@ -422,7 +422,7 @@ const Team = (props) => {
             justify-content: center;
           }
           .team-image2 {
-            width: 50%;
+            width: 70%;
             align-self: center;
             box-shadow: 5px 5px 10px 0px #908d8d;
             object-fit: cover;
@@ -633,12 +633,12 @@ const Team = (props) => {
               font-size: 2.2rem;
             }
             .team-container1 {
-              width: 80%;
+              width: 90%;
               padding-left: var(--dl-space-space-halfunit);
               padding-right: var(--dl-space-space-halfunit);
             }
             .team-image {
-              width: 50%;
+              width: 60%;
               border-radius: 15px;
             }
             .team-text06 {
@@ -649,7 +649,7 @@ const Team = (props) => {
               padding-right: var(--dl-space-space-twounits);
             }
             .team-image1 {
-              width: 50%;
+              width: 60%;
               border-radius: 15px;
             }
             .team-text13 {
@@ -665,6 +665,7 @@ const Team = (props) => {
               padding-right: var(--dl-space-space-twounits);
             }
             .team-image2 {
+              width: 60%;
               border-radius: 15px;
             }
             .team-text19 {
@@ -692,12 +693,12 @@ const Team = (props) => {
               padding-bottom: var(--dl-space-space-twounits);
             }
             .team-container1 {
-              width: 80%;
+              width: 94%;
               padding-left: 0px;
               padding-right: 0px;
             }
             .team-image {
-              width: 42%;
+              width: 60%;
               border-radius: 10px;
             }
             .team-text06 {
@@ -721,7 +722,7 @@ const Team = (props) => {
               height: 22px;
             }
             .team-image1 {
-              width: 42%;
+              width: 60%;
               border-radius: 10px;
             }
             .team-text13 {
@@ -742,7 +743,7 @@ const Team = (props) => {
               height: 22px;
             }
             .team-image2 {
-              width: 42%;
+              width: 60%;
               border-radius: 10px;
             }
             .team-text19 {
