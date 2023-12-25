@@ -810,6 +810,7 @@ const Contact = (props) => {
             .contact-container08 {
               width: 100%;
               height: 613px;
+              margin-left: 0px;
             }
             .contact-container10 {
               padding-left: var(--dl-space-space-twounits);
