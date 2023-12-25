@@ -57,7 +57,7 @@ const Hero = (props) => {
             justify-content: center;
           }
           .hero-text {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             align-self: flex-start;
             text-align: left;
             font-family: 'Raleway';
@@ -65,6 +65,7 @@ const Hero = (props) => {
             text-transform: uppercase;
           }
           .hero-text1 {
+            font-size: 1.3em;
             align-self: flex-start;
             text-align: left;
             font-family: 'Raleway';

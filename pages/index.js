@@ -484,9 +484,11 @@ const Home = (props) => {
           }
           .home-text16 {
             font-size: 2.2rem;
+            font-style: normal;
             margin-top: var(--dl-space-space-halfunit);
             text-align: center;
             font-family: Raleway;
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
             text-transform: uppercase;
           }
@@ -826,9 +828,11 @@ const Home = (props) => {
           .home-text36 {
             color: var(--dl-color-gray-beige);
             font-size: 2.5rem;
+            font-style: normal;
             margin-top: var(--dl-space-space-twounits);
             text-align: center;
             font-family: Raleway;
+            font-weight: 700;
           }
           .home-text37 {
             color: rgb(237, 235, 221);

@@ -79,6 +79,7 @@ const ContactThankYou = (props) => {
           .contact-thank-you-text {
             font-size: 3rem;
             text-align: center;
+            font-family: 'Raleway';
           }
           .contact-thank-you-text1 {
             max-width: var(--dl-size-size-maxwidth);

@@ -200,7 +200,7 @@ Form1.defaultProps = {
   textarea_placeholder: 'message',
   textinput_placeholder3: 'first name',
   button: 'get started',
-  heading: 'Leave A Message',
+  heading: 'LEAVE A MESSAGE',
 }
 
 Form1.propTypes = {

@@ -776,7 +776,7 @@ const Info = (props) => {
             justify-content: center;
           }
           .info-text {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-family: Raleway;
             margin-bottom: var(--dl-space-space-halfunit);
           }
@@ -798,7 +798,7 @@ const Info = (props) => {
             font-style: normal;
           }
           .info-text008 {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-family: Raleway;
             margin-bottom: var(--dl-space-space-halfunit);
           }
@@ -874,7 +874,7 @@ const Info = (props) => {
           }
           .info-text020 {
             color: var(--dl-color-gray-beige);
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-top: var(--dl-space-space-twounits);
             text-align: center;
             font-family: Raleway;
@@ -944,7 +944,7 @@ const Info = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
           }
           .info-text037 {
-            font-size: 3rem;
+            font-size: 2rem;
             align-self: flex-start;
             text-align: left;
             font-family: Raleway;
@@ -997,8 +997,9 @@ const Info = (props) => {
             background-color: var(--dl-color-gray-black);
           }
           .info-text041 {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-top: var(--dl-space-space-twounits);
+            font-family: 'Raleway';
             margin-bottom: var(--dl-space-space-twounits);
           }
           .info-container08 {
@@ -1215,7 +1216,6 @@ const Info = (props) => {
             padding-bottom: var(--dl-space-space-halfunit);
           }
           .info-text054 {
-            font-size: 2.2rem;
             font-family: Raleway;
           }
           .info-container09 {

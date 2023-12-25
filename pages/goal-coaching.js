@@ -121,7 +121,7 @@ const GoalCoaching = (props) => {
             justify-content: center;
           }
           .goal-coaching-text {
-            font-size: 2.2rem;
+            font-size: 2rem;
             align-self: flex-start;
             text-align: left;
             font-family: 'Raleway';
@@ -189,11 +189,11 @@ const GoalCoaching = (props) => {
             font-weight: 500;
           }
           .goal-coaching-text05 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
           }
           .goal-coaching-text06 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
           }
           .goal-coaching-text07 {
