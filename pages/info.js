@@ -183,10 +183,13 @@ const Info = (props) => {
             </a>
           </div>
         </div>
-        <h1 className="info-text041">DOCUMENTS</h1>
+        <h1 className="info-text041">
+          <span>DOCUMENTS</span>
+          <br></br>
+        </h1>
         <div className="info-container08">
           <div className="info-pricing-card">
-            <span className="info-text042">
+            <span className="info-text044">
               <span>Privacy</span>
               <br></br>
               <span>Practices Policy</span>
@@ -201,7 +204,7 @@ const Info = (props) => {
             </a>
           </div>
           <div className="info-pricing-card1">
-            <span className="info-text046">
+            <span className="info-text048">
               <span>Terms</span>
               <br></br>
               <span>And Conditions</span>
@@ -216,7 +219,7 @@ const Info = (props) => {
             </a>
           </div>
           <div className="info-pricing-card2">
-            <span className="info-text050">
+            <span className="info-text052">
               <span>Therapy</span>
               <br></br>
               <span>Practices Policy</span>
@@ -232,7 +235,7 @@ const Info = (props) => {
           </div>
         </div>
         <div className="info-features">
-          <h1 className="info-text054">
+          <h1 className="info-text056">
             <span>FAQ</span>
             <br></br>
           </h1>
@@ -246,7 +249,7 @@ const Info = (props) => {
                     <path d="M896 256h-192v-128c0-35.2-28.8-64-64-64h-256c-35.2 0-64 28.8-64 64v128h-192c-70.4 0-128 57.6-128 128v512c0 70.4 57.6 128 128 128h768c70.4 0 128-57.6 128-128v-512c0-70.4-57.6-128-128-128zM384 128h256v128h-256v-128zM768 704h-192v192h-128v-192h-192v-128h192v-192h128v192h192v128z"></path>
                   </svg>
                 </div>
-                <h2 className="info-text057">
+                <h2 className="info-text059">
                   Can I just take medicine for my symptoms?
                 </h2>
                 <div
@@ -257,7 +260,7 @@ const Info = (props) => {
                     data-thq="thq-dropdown-toggle"
                     className="info-dropdown-toggle"
                   >
-                    <span className="info-text058">READ ANSWER</span>
+                    <span className="info-text060">READ ANSWER</span>
                     <div
                       data-thq="thq-dropdown-arrow"
                       className="info-dropdown-arrow"
@@ -279,7 +282,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle01"
                       >
-                        <span className="info-text059">
+                        <span className="info-text061">
                           <span>
                             There is well-established research that has proven
                             that long-term mental health issues, trauma,
@@ -295,9 +298,9 @@ const Info = (props) => {
                             medication + treatment. It is all about what the
                             best course of action is for you.
                           </span>
-                          <br className="info-text061"></br>
-                          <br></br>
                           <br className="info-text063"></br>
+                          <br></br>
+                          <br className="info-text065"></br>
                           <br></br>
                         </span>
                       </div>
@@ -311,7 +314,7 @@ const Info = (props) => {
                     <path d="M1011.328 134.496c-110.752-83.928-281.184-134.034-455.91-134.034-216.12 0-392.226 75.456-483.16 207.020-42.708 61.79-66.33 134.958-70.208 217.474-3.454 73.474 8.884 154.726 36.684 242.146 94.874-284.384 359.82-507.102 665.266-507.102 0 0-285.826 75.232-465.524 308.192-0.112 0.138-2.494 3.090-6.614 8.698-36.080 48.278-67.538 103.162-91.078 165.328-39.87 94.83-76.784 224.948-76.784 381.782h128c0 0-19.43-122.222 14.36-262.79 55.89 7.556 105.858 11.306 150.852 11.306 117.678 0 201.37-25.46 263.388-80.124 55.568-48.978 86.198-114.786 118.624-184.456 49.524-106.408 105.654-227.010 268.654-320.152 9.33-5.332 15.362-14.992 16.056-25.716s-4.040-21.080-12.606-27.572z"></path>
                   </svg>
                 </div>
-                <h2 className="info-text065">How can counseling help me?</h2>
+                <h2 className="info-text067">How can counseling help me?</h2>
                 <div
                   data-thq="thq-dropdown"
                   className="info-thq-dropdown1 list-item"
@@ -328,7 +331,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle02"
                       >
-                        <span className="info-text066">
+                        <span className="info-text068">
                           Everyone that goes to counseling goes for different
                           reasons, so your experience will be unique to you!
                           Generally speaking, you can expect to talk about the
@@ -352,7 +355,7 @@ const Info = (props) => {
                     data-thq="thq-dropdown-toggle"
                     className="info-dropdown-toggle03"
                   >
-                    <span className="info-text067">READ ANSWER</span>
+                    <span className="info-text069">READ ANSWER</span>
                     <div
                       data-thq="thq-dropdown-arrow"
                       className="info-dropdown-arrow1"
@@ -374,7 +377,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle04"
                       >
-                        <span className="info-text068">
+                        <span className="info-text070">
                           <span>
                             There are so many ways that you can benefit by
                             engaging in counseling. Whether you need to learn
@@ -387,13 +390,13 @@ const Info = (props) => {
                             therapy can help you find a solution that works for
                             you.
                           </span>
-                          <br className="info-text070"></br>
-                          <br></br>
                           <br className="info-text072"></br>
                           <br></br>
                           <br className="info-text074"></br>
                           <br></br>
                           <br className="info-text076"></br>
+                          <br></br>
+                          <br className="info-text078"></br>
                           <br></br>
                         </span>
                       </div>
@@ -411,7 +414,7 @@ const Info = (props) => {
                 <svg viewBox="0 0 1024 1024" className="info-icon08">
                   <path d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM428.075 398.165c7.808-22.229 23.851-39.168 43.605-48.64s42.965-11.392 65.195-3.541c19.541 6.869 34.944 20.053 44.8 36.651 7.808 13.099 12.16 28.373 12.203 44.245 0 6.613-1.664 13.184-4.992 19.797-3.413 6.827-8.661 13.867-15.701 20.907-30.251 30.251-78.123 46.592-78.123 46.592-22.357 7.467-34.432 31.616-26.965 53.973s31.616 34.432 53.973 26.965c0 0 65.877-21.589 111.488-67.2 11.904-11.904 23.253-26.197 31.701-43.093 8.533-17.067 13.995-36.608 13.995-58.411-0.171-31.189-8.704-61.312-24.192-87.424-19.755-33.195-50.773-59.819-89.813-73.557-44.459-15.616-91.093-11.733-130.432 7.125s-71.595 52.821-87.211 97.28c-7.851 22.229 3.84 46.592 26.069 54.4s46.592-3.883 54.4-26.069zM554.667 725.333c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667 19.115 42.667 42.667 42.667 42.667-19.115 42.667-42.667z"></path>
                 </svg>
-                <h2 className="info-text078">
+                <h2 className="info-text080">
                   What is counseling actually like?
                 </h2>
                 <div
@@ -430,7 +433,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle05"
                       >
-                        <span className="info-text079">
+                        <span className="info-text081">
                           Everyone that goes to counseling goes for different
                           reasons, so your experience will be unique to you!
                           Generally speaking, you can expect to talk about the
@@ -454,7 +457,7 @@ const Info = (props) => {
                     data-thq="thq-dropdown-toggle"
                     className="info-dropdown-toggle06"
                   >
-                    <span className="info-text080">READ ANSWER</span>
+                    <span className="info-text082">READ ANSWER</span>
                     <div
                       data-thq="thq-dropdown-arrow"
                       className="info-dropdown-arrow2"
@@ -476,7 +479,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle07"
                       >
-                        <span className="info-text081">
+                        <span className="info-text083">
                           <span>
                             Everyone that goes to counseling goes for different
                             reasons, so your experience will be unique to you!
@@ -489,9 +492,9 @@ const Info = (props) => {
                             issue or to even help you change long-standing
                             patterns.
                           </span>
-                          <br className="info-text083"></br>
-                          <br></br>
                           <br className="info-text085"></br>
+                          <br></br>
+                          <br className="info-text087"></br>
                           <br></br>
                         </span>
                       </div>
@@ -504,7 +507,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle08"
                       >
-                        <span className="info-text087">
+                        <span className="info-text089">
                           <span>
                             Please note that you are guaranteed better results
                             if you are actively participating in the process.
@@ -516,9 +519,9 @@ const Info = (props) => {
                             to be open to change and new or different
                             perspectives.
                           </span>
-                          <br className="info-text089"></br>
-                          <br></br>
                           <br className="info-text091"></br>
+                          <br></br>
+                          <br className="info-text093"></br>
                           <br></br>
                         </span>
                       </div>
@@ -532,7 +535,7 @@ const Info = (props) => {
                     <path d="M644 342v-86q0-54-39-93t-93-39-93 39-39 93v86h264zM512 726q34 0 60-26t26-60-26-60-60-26-60 26-26 60 26 60 60 26zM768 342q34 0 60 25t26 59v428q0 34-26 59t-60 25h-512q-34 0-60-25t-26-59v-428q0-34 26-59t60-25h42v-86q0-88 63-151t151-63 151 63 63 151v86h42z"></path>
                   </svg>
                 </div>
-                <h2 className="info-text093">
+                <h2 className="info-text095">
                   Is what we talk about confidential?
                 </h2>
                 <div
@@ -551,7 +554,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle09"
                       >
-                        <span className="info-text094">
+                        <span className="info-text096">
                           Everyone that goes to counseling goes for different
                           reasons, so your experience will be unique to you!
                           Generally speaking, you can expect to talk about the
@@ -575,7 +578,7 @@ const Info = (props) => {
                     data-thq="thq-dropdown-toggle"
                     className="info-dropdown-toggle10"
                   >
-                    <span className="info-text095">READ ANSWER</span>
+                    <span className="info-text097">READ ANSWER</span>
                     <div
                       data-thq="thq-dropdown-arrow"
                       className="info-dropdown-arrow3"
@@ -597,7 +600,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle11"
                       >
-                        <span className="info-text096">
+                        <span className="info-text098">
                           <span>
                             Confidentiality is a very very important part of the
                             client-counselor relationship. For counseling to be
@@ -606,11 +609,11 @@ const Info = (props) => {
                             confidential disclosure agreement within our privacy
                             policy. This is called “Informed Consent”.
                           </span>
-                          <br className="info-text098"></br>
-                          <br className="info-text099"></br>
                           <br className="info-text100"></br>
-                          <br></br>
+                          <br className="info-text101"></br>
                           <br className="info-text102"></br>
+                          <br></br>
+                          <br className="info-text104"></br>
                           <br></br>
                         </span>
                       </div>
@@ -623,7 +626,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle12"
                       >
-                        <span className="info-text104">
+                        <span className="info-text106">
                           <span>
                             That being said, you may want your counselor to
                             share your info with your other healthcare
@@ -632,9 +635,9 @@ const Info = (props) => {
                             counselor will have to obtain your written
                             permission.
                           </span>
-                          <br className="info-text106"></br>
-                          <br></br>
                           <br className="info-text108"></br>
+                          <br></br>
+                          <br className="info-text110"></br>
                           <br></br>
                         </span>
                       </div>
@@ -642,15 +645,15 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle13"
                       >
-                        <span className="info-text110">
+                        <span className="info-text112">
                           <span>
                             State law and professional ethics require counselors
                             to be sworn to confidentiality except in the
                             following situations:
                           </span>
-                          <br className="info-text112"></br>
-                          <br></br>
                           <br className="info-text114"></br>
+                          <br></br>
+                          <br className="info-text116"></br>
                           <br></br>
                         </span>
                       </div>
@@ -660,7 +663,7 @@ const Info = (props) => {
                       >
                         <ul className="info-ul list">
                           <li className="info-li list-item">
-                            <span className="info-text116">
+                            <span className="info-text118">
                               1. If a counselor has reason to suspect their
                               client is in serious danger of harming themself or
                               others, or has threatened to do harm to another
@@ -668,7 +671,7 @@ const Info = (props) => {
                             </span>
                           </li>
                           <li className="list-item">
-                            <span className="info-text117">
+                            <span className="info-text119">
                               <span>
                                 2. If a counselor suspects past or present abuse
                                 or neglect of children, elders, or adults. It
@@ -691,7 +694,7 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle15"
                       >
-                        <span className="info-text121">
+                        <span className="info-text123">
                           <span>
                             That being said, you may want your counselor to
                             share your info with your other healthcare
@@ -700,9 +703,9 @@ const Info = (props) => {
                             counselor will have to obtain your written
                             permission.
                           </span>
-                          <br className="info-text123"></br>
-                          <br></br>
                           <br className="info-text125"></br>
+                          <br></br>
+                          <br className="info-text127"></br>
                           <br></br>
                         </span>
                       </div>
@@ -710,15 +713,15 @@ const Info = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="info-dropdown-toggle16"
                       >
-                        <span className="info-text127">
+                        <span className="info-text129">
                           <span>
                             State law and professional ethics require counselors
                             to be sworn to confidentiality except in the
                             following situations:
                           </span>
-                          <br className="info-text129"></br>
-                          <br></br>
                           <br className="info-text131"></br>
+                          <br></br>
+                          <br className="info-text133"></br>
                           <br></br>
                         </span>
                       </div>
@@ -776,7 +779,7 @@ const Info = (props) => {
             justify-content: center;
           }
           .info-text {
-            font-size: 1.3em;
+            font-size: 1.8em;
             font-style: normal;
             font-family: Raleway;
             font-weight: 700;
@@ -800,7 +803,7 @@ const Info = (props) => {
             font-style: normal;
           }
           .info-text008 {
-            font-size: 1.3em;
+            font-size: 1.8em;
             font-style: normal;
             font-family: Raleway;
             font-weight: 700;
@@ -1005,10 +1008,11 @@ const Info = (props) => {
             background-color: var(--dl-color-gray-black);
           }
           .info-text041 {
-            font-size: 2rem;
-            margin-top: var(--dl-space-space-twounits);
+            font-size: 2em;
+            font-style: normal;
             font-family: 'Raleway';
-            margin-bottom: var(--dl-space-space-twounits);
+            font-weight: 700;
+            margin-bottom: var(--dl-space-space-halfunit);
           }
           .info-container08 {
             width: 100%;
@@ -1046,7 +1050,7 @@ const Info = (props) => {
           .info-pricing-card:hover {
             transform: scale(1.02);
           }
-          .info-text042 {
+          .info-text044 {
             font-size: 1.8rem;
             align-self: center;
             font-style: normal;
@@ -1111,7 +1115,7 @@ const Info = (props) => {
           .info-pricing-card1:hover {
             transform: scale(1.02);
           }
-          .info-text046 {
+          .info-text048 {
             font-size: 1.8rem;
             align-self: center;
             font-style: normal;
@@ -1175,7 +1179,7 @@ const Info = (props) => {
           .info-pricing-card2:hover {
             transform: scale(1.02);
           }
-          .info-text050 {
+          .info-text052 {
             font-size: 1.8rem;
             align-self: center;
             font-style: normal;
@@ -1223,7 +1227,7 @@ const Info = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-halfunit);
           }
-          .info-text054 {
+          .info-text056 {
             font-size: 2rem;
             font-style: normal;
             font-family: Raleway;
@@ -1280,7 +1284,7 @@ const Info = (props) => {
             height: auto;
             align-self: flex-start;
           }
-          .info-text057 {
+          .info-text059 {
             color: var(--dl-color-gray-black);
             font-size: 1.7rem;
             font-style: normal;
@@ -1305,7 +1309,7 @@ const Info = (props) => {
             display: inline-flex;
             border-radius: var(--dl-radius-radius-radius2);
           }
-          .info-text058 {
+          .info-text060 {
             color: #000000;
             font-size: 18px;
             font-style: normal;
@@ -1369,7 +1373,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text059 {
+          .info-text061 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -1378,11 +1382,11 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text061 {
+          .info-text063 {
             font-style: normal;
             font-weight: 500;
           }
-          .info-text063 {
+          .info-text065 {
             font-style: normal;
             font-weight: 500;
           }
@@ -1407,7 +1411,7 @@ const Info = (props) => {
             height: auto;
             align-self: flex-start;
           }
-          .info-text065 {
+          .info-text067 {
             color: rgb(0, 0, 0);
             font-size: 1.7rem;
             align-self: center;
@@ -1470,7 +1474,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text066 {
+          .info-text068 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -1493,7 +1497,7 @@ const Info = (props) => {
             display: inline-flex;
             border-radius: var(--dl-radius-radius-radius2);
           }
-          .info-text067 {
+          .info-text069 {
             color: #000000;
             font-size: 18px;
             font-style: normal;
@@ -1557,16 +1561,11 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text068 {
+          .info-text070 {
             width: auto;
             cursor: pointer;
             display: flex;
             font-size: 16px;
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-          }
-          .info-text070 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -1578,9 +1577,14 @@ const Info = (props) => {
           }
           .info-text074 {
             font-style: normal;
+            font-family: Raleway;
             font-weight: 500;
           }
           .info-text076 {
+            font-style: normal;
+            font-weight: 500;
+          }
+          .info-text078 {
             font-style: normal;
             font-weight: 500;
           }
@@ -1627,7 +1631,7 @@ const Info = (props) => {
             height: auto;
             align-self: center;
           }
-          .info-text078 {
+          .info-text080 {
             color: var(--dl-color-gray-black);
             font-size: 1.7rem;
             font-style: normal;
@@ -1689,7 +1693,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text079 {
+          .info-text081 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -1712,7 +1716,7 @@ const Info = (props) => {
             display: inline-flex;
             border-radius: var(--dl-radius-radius-radius2);
           }
-          .info-text080 {
+          .info-text082 {
             color: #000000;
             font-size: 18px;
             font-style: normal;
@@ -1776,7 +1780,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text081 {
+          .info-text083 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -1785,13 +1789,13 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text083 {
+          .info-text085 {
             font-size: 14px;
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text085 {
+          .info-text087 {
             font-size: 14px;
             font-style: normal;
             font-family: Raleway;
@@ -1824,7 +1828,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text087 {
+          .info-text089 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -1833,13 +1837,13 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text089 {
+          .info-text091 {
             font-size: 14px;
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text091 {
+          .info-text093 {
             font-size: 14px;
             font-style: normal;
             font-family: Raleway;
@@ -1865,7 +1869,7 @@ const Info = (props) => {
             width: 4em;
             height: auto;
           }
-          .info-text093 {
+          .info-text095 {
             color: #000000;
             font-size: 1.7rem;
             align-self: center;
@@ -1928,7 +1932,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text094 {
+          .info-text096 {
             width: 100%;
             cursor: pointer;
             display: flex;
@@ -1951,7 +1955,7 @@ const Info = (props) => {
             display: inline-flex;
             border-radius: var(--dl-radius-radius-radius2);
           }
-          .info-text095 {
+          .info-text097 {
             color: #000000;
             font-size: 18px;
             font-style: normal;
@@ -2015,21 +2019,11 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text096 {
+          .info-text098 {
             width: auto;
             cursor: pointer;
             display: flex;
             font-size: 16px;
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-          }
-          .info-text098 {
-            font-style: normal;
-            font-family: Raleway;
-            font-weight: 500;
-          }
-          .info-text099 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2039,7 +2033,17 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
+          .info-text101 {
+            font-style: normal;
+            font-family: Raleway;
+            font-weight: 500;
+          }
           .info-text102 {
+            font-style: normal;
+            font-family: Raleway;
+            font-weight: 500;
+          }
+          .info-text104 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2071,7 +2075,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text104 {
+          .info-text106 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -2080,12 +2084,12 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text106 {
+          .info-text108 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text108 {
+          .info-text110 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2110,7 +2114,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text110 {
+          .info-text112 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -2119,12 +2123,12 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text112 {
+          .info-text114 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text114 {
+          .info-text116 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2154,11 +2158,11 @@ const Info = (props) => {
           .info-li {
             font-family: Raleway;
           }
-          .info-text116 {
+          .info-text118 {
             font-style: normal;
             font-weight: 500;
           }
-          .info-text117 {
+          .info-text119 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2190,7 +2194,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text121 {
+          .info-text123 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -2199,12 +2203,12 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text123 {
+          .info-text125 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text125 {
+          .info-text127 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2229,7 +2233,7 @@ const Info = (props) => {
             color: #fff;
             background-color: var(--dl-color-gray-grey);
           }
-          .info-text127 {
+          .info-text129 {
             width: auto;
             cursor: pointer;
             display: flex;
@@ -2238,12 +2242,12 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text129 {
+          .info-text131 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
           }
-          .info-text131 {
+          .info-text133 {
             font-style: normal;
             font-family: Raleway;
             font-weight: 500;
@@ -2307,18 +2311,13 @@ const Info = (props) => {
               position: relative;
               grid-template-columns: 1fr 1fr;
             }
-            .info-text041 {
-              font-size: 2.5rem;
-              text-align: center;
-              font-family: Raleway;
-            }
             .info-pricing-card {
               width: 100%;
               padding: var(--dl-space-space-twounits);
               max-width: 100%;
               align-items: center;
             }
-            .info-text042 {
+            .info-text044 {
               font-size: 1.2rem;
             }
             .info-link2 {
@@ -2337,7 +2336,7 @@ const Info = (props) => {
               max-width: 100%;
               align-items: center;
             }
-            .info-text046 {
+            .info-text048 {
               font-size: 1.2rem;
             }
             .info-link3 {
@@ -2356,7 +2355,7 @@ const Info = (props) => {
               max-width: 100%;
               align-items: center;
             }
-            .info-text050 {
+            .info-text052 {
               font-size: 1.2rem;
             }
             .info-link4 {
@@ -2374,7 +2373,7 @@ const Info = (props) => {
               padding-left: var(--dl-space-space-threeunits);
               padding-right: 0px;
             }
-            .info-text054 {
+            .info-text056 {
               font-size: 2.5rem;
               font-style: normal;
               font-family: Raleway;
@@ -2395,7 +2394,7 @@ const Info = (props) => {
             .info-icon {
               width: 3em;
             }
-            .info-text057 {
+            .info-text059 {
               align-self: flex-start;
             }
             .info-thq-dropdown {
@@ -2407,7 +2406,7 @@ const Info = (props) => {
             .info-icon04 {
               width: 3em;
             }
-            .info-text065 {
+            .info-text067 {
               align-self: flex-start;
             }
             .info-thq-dropdown1 {
@@ -2427,7 +2426,7 @@ const Info = (props) => {
               width: 3em;
               align-self: flex-start;
             }
-            .info-text078 {
+            .info-text080 {
               align-self: flex-start;
             }
             .info-thq-dropdown3 {
@@ -2442,7 +2441,7 @@ const Info = (props) => {
             .info-icon12 {
               width: 3em;
             }
-            .info-text093 {
+            .info-text095 {
               align-self: flex-start;
             }
             .info-thq-dropdown5 {
@@ -2516,9 +2515,6 @@ const Info = (props) => {
               margin-left: var(--dl-space-space-halfunit);
               margin-right: var(--dl-space-space-halfunit);
             }
-            .info-text041 {
-              text-align: center;
-            }
             .info-container08 {
               flex-flow: column;
               padding-left: var(--dl-space-space-twounits);
@@ -2552,7 +2548,7 @@ const Info = (props) => {
               padding-left: var(--dl-space-space-fiveunits);
               padding-right: var(--dl-space-space-fiveunits);
             }
-            .info-text054 {
+            .info-text056 {
               text-align: left;
             }
             .info-container09 {
@@ -2650,16 +2646,13 @@ const Info = (props) => {
               font-style: normal;
               font-weight: 700;
             }
-            .info-text041 {
-              font-size: 2.2rem;
-            }
             .info-container08 {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-twounits);
             }
-            .info-text042 {
+            .info-text044 {
               font-size: 1.2rem;
               font-style: normal;
               font-family: Raleway;
@@ -2672,7 +2665,7 @@ const Info = (props) => {
               font-style: normal;
               font-weight: 700;
             }
-            .info-text046 {
+            .info-text048 {
               font-size: 1.2rem;
               font-style: normal;
               font-family: Raleway;
@@ -2685,7 +2678,7 @@ const Info = (props) => {
               font-style: normal;
               font-weight: 700;
             }
-            .info-text050 {
+            .info-text052 {
               font-size: 1.2rem;
               font-style: normal;
               font-family: Raleway;
@@ -2704,7 +2697,7 @@ const Info = (props) => {
               padding-right: var(--dl-space-space-oneandhalfunits);
               padding-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .info-text054 {
+            .info-text056 {
               font-size: 2.2rem;
               font-family: Raleway;
             }

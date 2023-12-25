@@ -7,8 +7,8 @@ const Hero = (props) => {
     <>
       <div className={`hero-hero ${props.rootClassName} `}>
         <div className="hero-container">
-          <h1 className="hero-text">{props.heading2}</h1>
-          <h1 className="hero-text1">{props.heading21}</h1>
+          <h1 className="hero-text">{props.heading3}</h1>
+          <h1 className="hero-text1">{props.heading31}</h1>
           <span className="hero-text2">
             <span>
               Adrian works collaboratively with her clients, helping them
@@ -57,12 +57,18 @@ const Hero = (props) => {
             justify-content: center;
           }
           .hero-text {
-            font-size: 1.8rem;
-            font-family: 'Raleway';
+            font-size: 1.8em;
+            font-style: normal;
+            font-family: Raleway;
+            font-weight: 700;
+            margin-bottom: var(--dl-space-space-halfunit);
           }
           .hero-text1 {
-            font-size: 1.3rem;
-            font-family: 'Raleway';
+            font-size: 1.3em;
+            font-style: normal;
+            font-family: Raleway;
+            font-weight: 700;
+            margin-bottom: var(--dl-space-space-halfunit);
           }
           .hero-text2 {
             color: var(--dl-color-gray-black);
@@ -171,6 +177,8 @@ Hero.defaultProps = {
   image_alt: 'image',
   heading2: 'MEET YOUR COACH',
   heading21: 'MEET YOUR COACH',
+  heading3: 'MEET YOUR COACH',
+  heading31: 'ADRIAN BYRD',
 }
 
 Hero.propTypes = {
@@ -183,6 +191,8 @@ Hero.propTypes = {
   image_alt: PropTypes.string,
   heading2: PropTypes.string,
   heading21: PropTypes.string,
+  heading3: PropTypes.string,
+  heading31: PropTypes.string,
 }
 
 export default Hero
