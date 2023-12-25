@@ -183,19 +183,19 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
+  heading: 'meet your coach',
+  rootClassName: '',
+  heading1: 'Adrian byrd',
   image_src: 'https://i.imgur.com/mmU03TW.jpg',
   image_alt: 'image',
-  heading: 'meet your coach',
-  heading1: 'Adrian byrd',
-  rootClassName: '',
 }
 
 Hero.propTypes = {
+  heading: PropTypes.string,
+  rootClassName: PropTypes.string,
+  heading1: PropTypes.string,
   image_src: PropTypes.string,
   image_alt: PropTypes.string,
-  heading: PropTypes.string,
-  heading1: PropTypes.string,
-  rootClassName: PropTypes.string,
 }
 
 export default Hero

@@ -2,69 +2,72 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-const Form = (props) => {
+const Form1 = (props) => {
   return (
     <>
-      <div className="form-container">
+      <div className="form1-container">
         <form
           action="https://openformstack.com/f/clqk4nblf00048hsl9nf3vkbo"
           method="POST"
           enctype="application/x-www-form-urlencoded"
-          className="form-form"
+          className="form1-form"
         >
-          <h1 className="form-text">{props.heading}</h1>
-          <div className="form-container1">
+          <h1 className="form1-text">{props.heading}</h1>
+          <div className="form1-container1">
             <input
               type="text"
               name="first name"
-              placeholder={props.textinput_placeholder2}
-              className="form-textinput input"
+              placeholder={props.textinput_placeholder3}
+              className="form1-textinput input"
             />
             <input
               type="text"
               name="last name"
-              placeholder={props.textinput_placeholder3}
-              className="form-textinput1 input"
+              placeholder={props.textinput_placeholder4}
+              className="form1-textinput1 input"
             />
           </div>
           <input
             type="email"
             name="email address"
             placeholder={props.textinput_placeholder}
-            className="form-textinput2 input"
+            className="form1-textinput2 input"
           />
           <input
             type="number"
             name="phone number"
             placeholder={props.textinput_placeholder1}
-            className="form-textinput3 input"
+            className="form1-textinput3 input"
           />
-          <div className="form-container2">
-            <input
-              type="text"
-              placeholder={props.textinput_placeholder4}
-              name="campaign"
-              value="2024-goal-coaching"
-              className="form-textinput4 input"
-            />
-            <button
-              name="goal button"
-              type="submit"
-              className="form-button button"
-            >
-              {props.button}
-            </button>
-          </div>
+          <textarea
+            placeholder={props.textarea_placeholder}
+            rows="4"
+            className="form1-textarea textarea"
+          ></textarea>
+          <input
+            type="text"
+            placeholder={props.textinput_placeholder2}
+            name="campaign"
+            value="contact-us"
+            className="form1-textinput4 input"
+          />
+          <button
+            name="goal button"
+            type="submit"
+            className="form1-button button"
+          >
+            {props.button}
+          </button>
         </form>
       </div>
       <style jsx>
         {`
-          .form-container {
+          .form1-container {
             display: flex;
             position: relative;
           }
-          .form-form {
-            width: 1350px;
+          .form1-form {
+            width: 100%;
             height: auto;
             display: flex;
             padding: var(--dl-space-space-twounits);
@@ -75,12 +78,13 @@ const Form = (props) => {
             justify-content: flex-start;
             background-color: var(--dl-color-gray-green);
           }
-          .form-text {
+          .form1-text {
             color: var(--dl-color-gray-beige);
+            font-family: 'Raleway';
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-green);
           }
-          .form-container1 {
+          .form1-container1 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -88,39 +92,35 @@ const Form = (props) => {
             align-items: flex-start;
             justify-content: center;
           }
-          .form-textinput {
+          .form1-textinput {
             width: 190px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .form-textinput1 {
+          .form1-textinput1 {
             width: 190px;
             margin-left: 20px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .form-textinput2 {
+          .form1-textinput2 {
             width: 400px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .form-textinput3 {
+          .form1-textinput3 {
             width: 400px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .form-container2 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
+          .form1-textarea {
+            width: 400px;
+            border-width: 0px;
           }
-          .form-textinput4 {
+          .form1-textinput4 {
             display: none;
           }
-          .form-button {
+          .form1-button {
             font-size: 20px;
             box-shadow: rgb(136, 135, 135) 5px 5px 10px 0px;
             font-style: normal;
@@ -140,20 +140,20 @@ const Form = (props) => {
             border-left-width: 0px;
             border-right-width: 0px;
           }
-          .form-button:hover {
+          .form1-button:hover {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
           @media (max-width: 991px) {
-            .form-button {
+            .form1-button {
               align-self: stretch;
             }
           }
           @media (max-width: 767px) {
-            .form-form {
+            .form1-form {
               width: 600px;
             }
-            .form-button {
+            .form1-button {
               width: 200px;
               font-size: 18px;
               align-self: center;
@@ -161,26 +161,26 @@ const Form = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .form-form {
+            .form1-form {
               width: 400px;
             }
-            .form-text {
+            .form1-text {
               font-size: 1.8em;
               text-align: left;
             }
-            .form-textinput {
+            .form1-textinput {
               width: 150px;
             }
-            .form-textinput1 {
+            .form1-textinput1 {
               width: 150px;
             }
-            .form-textinput2 {
+            .form1-textinput2 {
               width: 325px;
             }
-            .form-textinput3 {
+            .form1-textinput3 {
               width: 325px;
             }
-            .form-button {
+            .form1-button {
               font-size: 12px;
               font-style: normal;
               font-weight: 700;
@@ -192,26 +192,26 @@ const Form = (props) => {
   )
 }
 
-Form.defaultProps = {
-  button: 'get started',
-  textinput_placeholder1: 'phone number',
-  textinput_placeholder3: 'last name',
-  textinput_placeholder2: 'first name',
+Form1.defaultProps = {
   heading: "Don't wait. Enroll today!",
   textinput_placeholder: 'email address',
+  textinput_placeholder1: 'phone number',
   textarea_placeholder: 'message',
-  textinput_placeholder4: 'placeholder',
+  textinput_placeholder2: 'placeholder',
+  button: 'get started',
+  textinput_placeholder3: 'first name',
+  textinput_placeholder4: 'last name',
 }
 
-Form.propTypes = {
-  button: PropTypes.string,
-  textinput_placeholder1: PropTypes.string,
-  textinput_placeholder3: PropTypes.string,
-  textinput_placeholder2: PropTypes.string,
+Form1.propTypes = {
   heading: PropTypes.string,
   textinput_placeholder: PropTypes.string,
+  textinput_placeholder1: PropTypes.string,
   textarea_placeholder: PropTypes.string,
+  textinput_placeholder2: PropTypes.string,
+  button: PropTypes.string,
+  textinput_placeholder3: PropTypes.string,
   textinput_placeholder4: PropTypes.string,
 }
 
-export default Form
+export default Form1

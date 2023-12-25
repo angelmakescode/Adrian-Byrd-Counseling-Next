@@ -66,6 +66,9 @@ const FeatureCard11 = (props) => {
           .feature-card11-root-class-name9 {
             background-color: #ffffff;
           }
+          .feature-card11-root-class-name10 {
+            background-color: #ffffff;
+          }
           .feature-card11-root-class-name11 {
             background-color: #ffffff;
           }
@@ -91,9 +94,6 @@ const FeatureCard11 = (props) => {
             background-color: #ffffff;
           }
           .feature-card11-root-class-name19 {
-            background-color: #ffffff;
-          }
-          .feature-card11-root-class-name10 {
             background-color: #ffffff;
           }
           .feature-card11-root-class-name20 {
@@ -124,10 +124,10 @@ const FeatureCard11 = (props) => {
             .feature-card11-root-class-name9 {
               background-color: #fbfaf4;
             }
-            .feature-card11-root-class-name11 {
+            .feature-card11-root-class-name10 {
               background-color: #fbfaf4;
             }
-            .feature-card11-root-class-name10 {
+            .feature-card11-root-class-name11 {
               background-color: #fbfaf4;
             }
           }

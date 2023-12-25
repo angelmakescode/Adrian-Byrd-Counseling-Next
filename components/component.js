@@ -130,13 +130,13 @@ const AppComponent = (props) => {
 }
 
 AppComponent.defaultProps = {
-  heading: 'meet your coach',
   heading1: 'Adrian byrd',
+  heading: 'meet your coach',
 }
 
 AppComponent.propTypes = {
-  heading: PropTypes.string,
   heading1: PropTypes.string,
+  heading: PropTypes.string,
 }
 
 export default AppComponent
