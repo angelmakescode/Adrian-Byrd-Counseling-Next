@@ -7,8 +7,8 @@ const Hero = (props) => {
     <>
       <div className={`hero-hero ${props.rootClassName} `}>
         <div className="hero-container">
-          <h1 className="hero-text">{props.heading}</h1>
-          <h1 className="hero-text1">{props.heading1}</h1>
+          <h1 className="hero-text">{props.heading2}</h1>
+          <h1 className="hero-text1">{props.heading21}</h1>
           <span className="hero-text2">
             <span>
               Adrian works collaboratively with her clients, helping them
@@ -58,23 +58,11 @@ const Hero = (props) => {
           }
           .hero-text {
             font-size: 1.8rem;
-            align-self: flex-start;
-            font-style: normal;
-            text-align: left;
             font-family: 'Raleway';
-            font-weight: 700;
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-transform: uppercase;
           }
           .hero-text1 {
-            font-size: 1.3em;
-            align-self: flex-start;
-            font-style: normal;
-            text-align: left;
+            font-size: 1.3rem;
             font-family: 'Raleway';
-            font-weight: 700;
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-transform: uppercase;
           }
           .hero-text2 {
             color: var(--dl-color-gray-black);
@@ -109,12 +97,6 @@ const Hero = (props) => {
               flex-direction: column;
               justify-content: center;
             }
-            .hero-text {
-              text-align: center;
-            }
-            .hero-text1 {
-              text-align: center;
-            }
             .hero-text2 {
               color: var(--dl-color-gray-black);
               font-size: 1.3rem;
@@ -132,14 +114,6 @@ const Hero = (props) => {
             }
             .hero-container {
               width: 100%;
-            }
-            .hero-text {
-              align-self: center;
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .hero-text1 {
-              align-self: center;
-              margin-bottom: var(--dl-space-space-unit);
             }
             .hero-text2 {
               color: var(--dl-color-gray-black);
@@ -195,6 +169,8 @@ Hero.defaultProps = {
   heading1: 'Adrian byrd',
   image_src: 'https://i.imgur.com/mmU03TW.jpg',
   image_alt: 'image',
+  heading2: 'MEET YOUR COACH',
+  heading21: 'MEET YOUR COACH',
 }
 
 Hero.propTypes = {
@@ -205,6 +181,8 @@ Hero.propTypes = {
   heading1: PropTypes.string,
   image_src: PropTypes.string,
   image_alt: PropTypes.string,
+  heading2: PropTypes.string,
+  heading21: PropTypes.string,
 }
 
 export default Hero
