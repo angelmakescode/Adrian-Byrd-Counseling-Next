@@ -59,16 +59,20 @@ const Hero = (props) => {
           .hero-text {
             font-size: 1.8rem;
             align-self: flex-start;
+            font-style: normal;
             text-align: left;
             font-family: 'Raleway';
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
             text-transform: uppercase;
           }
           .hero-text1 {
             font-size: 1.3em;
             align-self: flex-start;
+            font-style: normal;
             text-align: left;
             font-family: 'Raleway';
+            font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
             text-transform: uppercase;
           }
@@ -184,6 +188,8 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
+  text: 'MAKE 2024 THE YEAR YOU ',
+  text1: 'CRUSH YOUR GOALS',
   heading: 'meet your coach',
   rootClassName: '',
   heading1: 'Adrian byrd',
@@ -192,6 +198,8 @@ Hero.defaultProps = {
 }
 
 Hero.propTypes = {
+  text: PropTypes.string,
+  text1: PropTypes.string,
   heading: PropTypes.string,
   rootClassName: PropTypes.string,
   heading1: PropTypes.string,
