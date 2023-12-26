@@ -168,8 +168,10 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
+  heading31: 'ADRIAN BYRD',
   text: 'MAKE 2024 THE YEAR YOU ',
   text1: 'CRUSH YOUR GOALS',
+  heading3: 'MEET YOUR COACH',
   heading: 'meet your coach',
   rootClassName: '',
   heading1: 'Adrian byrd',
@@ -177,13 +179,13 @@ Hero.defaultProps = {
   image_alt: 'image',
   heading2: 'MEET YOUR COACH',
   heading21: 'MEET YOUR COACH',
-  heading3: 'MEET YOUR COACH',
-  heading31: 'ADRIAN BYRD',
 }
 
 Hero.propTypes = {
+  heading31: PropTypes.string,
   text: PropTypes.string,
   text1: PropTypes.string,
+  heading3: PropTypes.string,
   heading: PropTypes.string,
   rootClassName: PropTypes.string,
   heading1: PropTypes.string,
@@ -191,8 +193,6 @@ Hero.propTypes = {
   image_alt: PropTypes.string,
   heading2: PropTypes.string,
   heading21: PropTypes.string,
-  heading3: PropTypes.string,
-  heading31: PropTypes.string,
 }
 
 export default Hero

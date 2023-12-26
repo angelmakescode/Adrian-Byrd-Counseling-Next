@@ -208,8 +208,8 @@ Form1.defaultProps = {
   textarea_placeholder: 'message',
   textinput_placeholder3: 'first name',
   button: 'get started',
-  heading: 'LEAVE A MESSAGE',
   heading1: 'LEAVE A MESSAGE',
+  heading: 'LEAVE A MESSAGE',
 }
 
 Form1.propTypes = {
@@ -220,8 +220,8 @@ Form1.propTypes = {
   textarea_placeholder: PropTypes.string,
   textinput_placeholder3: PropTypes.string,
   button: PropTypes.string,
-  heading: PropTypes.string,
   heading1: PropTypes.string,
+  heading: PropTypes.string,
 }
 
 export default Form1
