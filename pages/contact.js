@@ -138,7 +138,7 @@ const Contact = (props) => {
             enctype="application/x-www-form-urlencoded"
             className="contact-form1"
           >
-            <h1 className="contact-text10">Don&apos;t wait. Enroll today!</h1>
+            <h1 className="contact-text10">LEAVE A MESSAGE</h1>
             <div className="contact-container08">
               <input
                 type="text"
