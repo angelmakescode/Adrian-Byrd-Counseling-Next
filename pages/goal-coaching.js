@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Header from '../components/header'
-import Form from '../components/form'
+import GoalFormOFS from '../components/goal-form-ofs'
 import Hero from '../components/hero'
 import Testimonial from '../components/testimonial'
 import Footer from '../components/footer'
@@ -51,34 +51,88 @@ const GoalCoaching = (props) => {
             className="goal-coaching-image"
           />
         </div>
-        <Form></Form>
+        <GoalFormOFS rootClassName="goal-form-ofs-root-class-name"></GoalFormOFS>
+        <div className="goal-coaching-container2">
+          <form
+            action="https://delicatedesign.png@gmail.com"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            className="goal-coaching-form"
+          >
+            <h1 className="goal-coaching-text05">
+              Don&apos;t wait. Enroll today!
+            </h1>
+            <div className="goal-coaching-container3">
+              <input
+                type="text"
+                name="first name"
+                placeholder="first name"
+                className="goal-coaching-textinput input"
+              />
+              <input
+                type="text"
+                name="last name"
+                placeholder="last name"
+                className="goal-coaching-textinput1 input"
+              />
+            </div>
+            <input
+              type="email"
+              name="email address"
+              placeholder="email address"
+              className="goal-coaching-textinput2 input"
+            />
+            <input
+              type="number"
+              name="phone number"
+              placeholder="phone number"
+              className="goal-coaching-textinput3 input"
+            />
+            <div className="goal-coaching-container4">
+              <input
+                type="text"
+                name="campaign"
+                value="2024-goal-coaching"
+                placeholder="placeholder"
+                className="goal-coaching-textinput4 input"
+              />
+              <button
+                name="goal button"
+                type="submit"
+                className="goal-coaching-button button"
+              >
+                get started
+              </button>
+            </div>
+          </form>
+        </div>
         <div className="goal-coaching-hero1">
           <img
             alt="image"
             src="https://i.imgur.com/hXzuerG.png"
             className="goal-coaching-image1"
           />
-          <div className="goal-coaching-container2">
-            <span className="goal-coaching-text05">
-              <span className="goal-coaching-text06">SIMPLE PRICING</span>
-              <br className="goal-coaching-text07"></br>
+          <div className="goal-coaching-container5">
+            <span className="goal-coaching-text06">
+              <span className="goal-coaching-text07">SIMPLE PRICING</span>
               <br className="goal-coaching-text08"></br>
-              <span className="goal-coaching-text09">6 sessions</span>
-              <span className="goal-coaching-text10"> for $97/month</span>
-              <br className="goal-coaching-text11"></br>
+              <br className="goal-coaching-text09"></br>
+              <span className="goal-coaching-text10">6 sessions</span>
+              <span className="goal-coaching-text11"> for $97/month</span>
               <br className="goal-coaching-text12"></br>
-              <span className="goal-coaching-text13">12 sessions</span>
-              <span className="goal-coaching-text14"> for $177/month</span>
-              <br className="goal-coaching-text15"></br>
+              <br className="goal-coaching-text13"></br>
+              <span className="goal-coaching-text14">12 sessions</span>
+              <span className="goal-coaching-text15"> for $177/month</span>
               <br className="goal-coaching-text16"></br>
-              <span className="goal-coaching-text17">18 sessions</span>
-              <span className="goal-coaching-text18"> for $277/month</span>
-              <br className="goal-coaching-text19"></br>
+              <br className="goal-coaching-text17"></br>
+              <span className="goal-coaching-text18">18 sessions</span>
+              <span className="goal-coaching-text19"> for $277/month</span>
               <br className="goal-coaching-text20"></br>
-              <span className="goal-coaching-text21">
+              <br className="goal-coaching-text21"></br>
+              <span className="goal-coaching-text22">
                 All packages include unlimited messaging in between sessions
               </span>
-              <br className="goal-coaching-text22"></br>
+              <br className="goal-coaching-text23"></br>
             </span>
           </div>
         </div>
@@ -156,6 +210,101 @@ const GoalCoaching = (props) => {
             margin-left: var(--dl-space-space-unit);
             border-radius: 25px;
           }
+          .goal-coaching-container2 {
+            display: flex;
+            position: relative;
+          }
+          .goal-coaching-form {
+            width: 1350px;
+            height: auto;
+            display: flex;
+            padding: var(--dl-space-space-twounits);
+            align-items: center;
+            border-radius: 25px;
+            flex-direction: column;
+            padding-bottom: 32px;
+            justify-content: flex-start;
+            background-color: var(--dl-color-gray-green);
+          }
+          .goal-coaching-text05 {
+            color: var(--dl-color-gray-beige);
+            font-size: 2rem;
+            font-style: normal;
+            margin-top: 0px;
+            text-align: center;
+            font-family: Raleway;
+            font-weight: 700;
+            border-color: var(--dl-color-gray-beige);
+            border-width: 1px;
+            margin-bottom: var(--dl-space-space-twounits);
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+          }
+          .goal-coaching-container3 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .goal-coaching-textinput {
+            width: 190px;
+            border-width: 0px;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .goal-coaching-textinput1 {
+            width: 190px;
+            margin-left: 20px;
+            border-width: 0px;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .goal-coaching-textinput2 {
+            width: 400px;
+            border-width: 0px;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .goal-coaching-textinput3 {
+            width: 400px;
+            border-width: 0px;
+            margin-bottom: var(--dl-space-space-twounits);
+          }
+          .goal-coaching-container4 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .goal-coaching-textinput4 {
+            display: none;
+          }
+          .goal-coaching-button {
+            font-size: 20px;
+            box-shadow: rgb(136, 135, 135) 5px 5px 10px 0px;
+            font-style: normal;
+            margin-top: var(--dl-space-space-unit);
+            transition: 0.3s;
+            font-family: 'Raleway';
+            font-weight: 600;
+            padding-top: var(--dl-space-space-unit);
+            border-width: 2.5px;
+            padding-left: var(--dl-space-space-twounits);
+            border-radius: 25px;
+            padding-right: var(--dl-space-space-twounits);
+            padding-bottom: var(--dl-space-space-unit);
+            text-transform: uppercase;
+            background-color: rgb(247, 213, 139);
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 0px;
+          }
+          .goal-coaching-button:hover {
+            color: var(--dl-color-gray-beige);
+            background-color: var(--dl-color-gray-black);
+          }
           .goal-coaching-hero1 {
             width: 92%;
             display: flex;
@@ -181,7 +330,7 @@ const GoalCoaching = (props) => {
             border-left-width: 3px;
             border-right-width: 3px;
           }
-          .goal-coaching-container2 {
+          .goal-coaching-container5 {
             width: auto;
             display: flex;
             align-self: center;
@@ -190,7 +339,7 @@ const GoalCoaching = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .goal-coaching-text05 {
+          .goal-coaching-text06 {
             width: 95%;
             font-size: 1.3rem;
             align-self: center;
@@ -198,24 +347,21 @@ const GoalCoaching = (props) => {
             font-family: 'Raleway';
             font-weight: 500;
           }
-          .goal-coaching-text06 {
-            font-size: 1.8rem;
-            font-weight: 700;
-          }
           .goal-coaching-text07 {
             font-size: 1.8rem;
             font-weight: 700;
           }
           .goal-coaching-text08 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1.8rem;
+            font-weight: 700;
           }
           .goal-coaching-text09 {
             font-size: 1.5rem;
             font-weight: 600;
           }
           .goal-coaching-text10 {
-            font-style: normal;
+            font-size: 1.5rem;
+            font-weight: 600;
           }
           .goal-coaching-text11 {
             font-style: normal;
@@ -224,11 +370,11 @@ const GoalCoaching = (props) => {
             font-style: normal;
           }
           .goal-coaching-text13 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-style: normal;
           }
           .goal-coaching-text14 {
-            font-style: normal;
+            font-size: 1.5rem;
+            font-weight: 600;
           }
           .goal-coaching-text15 {
             font-style: normal;
@@ -237,11 +383,11 @@ const GoalCoaching = (props) => {
             font-style: normal;
           }
           .goal-coaching-text17 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-style: normal;
           }
           .goal-coaching-text18 {
-            font-style: normal;
+            font-size: 1.5rem;
+            font-weight: 600;
           }
           .goal-coaching-text19 {
             font-style: normal;
@@ -250,11 +396,14 @@ const GoalCoaching = (props) => {
             font-style: normal;
           }
           .goal-coaching-text21 {
+            font-style: normal;
+          }
+          .goal-coaching-text22 {
             font-size: 1.5rem;
             font-family: 'Raleway';
             font-weight: 600;
           }
-          .goal-coaching-text22 {
+          .goal-coaching-text23 {
             font-style: normal;
           }
           @media (max-width: 991px) {
@@ -285,20 +434,23 @@ const GoalCoaching = (props) => {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
+            .goal-coaching-button {
+              align-self: stretch;
+            }
             .goal-coaching-hero1 {
               flex-direction: row;
             }
             .goal-coaching-image1 {
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .goal-coaching-container2 {
+            .goal-coaching-container5 {
               align-items: center;
               margin-left: 0px;
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-twounits);
               padding-right: 0px;
             }
-            .goal-coaching-text05 {
+            .goal-coaching-text06 {
               text-align: left;
               margin-left: var(--dl-space-space-unit);
             }
@@ -338,6 +490,15 @@ const GoalCoaching = (props) => {
               height: 125px;
               margin-left: 0px;
             }
+            .goal-coaching-form {
+              width: 600px;
+            }
+            .goal-coaching-button {
+              width: 200px;
+              font-size: 18px;
+              align-self: center;
+              text-align: center;
+            }
             .goal-coaching-hero1 {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -346,7 +507,7 @@ const GoalCoaching = (props) => {
             .goal-coaching-image1 {
               width: 50%;
             }
-            .goal-coaching-text05 {
+            .goal-coaching-text06 {
               width: 92%;
               text-align: center;
               margin-left: 0px;
@@ -396,6 +557,26 @@ const GoalCoaching = (props) => {
               align-self: center;
               margin-left: 0px;
             }
+            .goal-coaching-form {
+              width: 400px;
+            }
+            .goal-coaching-textinput {
+              width: 150px;
+            }
+            .goal-coaching-textinput1 {
+              width: 150px;
+            }
+            .goal-coaching-textinput2 {
+              width: 325px;
+            }
+            .goal-coaching-textinput3 {
+              width: 325px;
+            }
+            .goal-coaching-button {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 700;
+            }
             .goal-coaching-hero1 {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
@@ -405,10 +586,10 @@ const GoalCoaching = (props) => {
             .goal-coaching-image1 {
               width: 85%;
             }
-            .goal-coaching-container2 {
+            .goal-coaching-container5 {
               margin-bottom: var(--dl-space-space-unit);
             }
-            .goal-coaching-text05 {
+            .goal-coaching-text06 {
               width: 92%;
               align-self: center;
               text-align: left;
