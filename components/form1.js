@@ -208,12 +208,12 @@ Form1.defaultProps = {
   textinput_placeholder4: 'last name',
   textinput_placeholder: 'email address',
   textinput_placeholder2: 'placeholder',
+  rootClassName: '',
   textarea_placeholder: 'message',
   textinput_placeholder3: 'first name',
   button: 'get started',
   heading1: 'LEAVE A MESSAGE',
   heading: 'LEAVE A MESSAGE',
-  rootClassName: '',
 }
 
 Form1.propTypes = {
@@ -221,12 +221,12 @@ Form1.propTypes = {
   textinput_placeholder4: PropTypes.string,
   textinput_placeholder: PropTypes.string,
   textinput_placeholder2: PropTypes.string,
+  rootClassName: PropTypes.string,
   textarea_placeholder: PropTypes.string,
   textinput_placeholder3: PropTypes.string,
   button: PropTypes.string,
   heading1: PropTypes.string,
   heading: PropTypes.string,
-  rootClassName: PropTypes.string,
 }
 
 export default Form1

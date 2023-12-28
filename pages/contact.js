@@ -133,7 +133,7 @@ const Contact = (props) => {
           <Form1 rootClassName="form1-root-class-name"></Form1>
           <div className="contact-container07"></div>
           <form
-            action="https://formsubmit.co/delicatedesign.png@gmail.com"
+            action="https://formsubmit.co/adrian@adrianbyrdcounseling.com"
             method="POST"
             enctype="application/x-www-form-urlencoded"
             className="contact-form1"
@@ -142,18 +142,18 @@ const Contact = (props) => {
             <div className="contact-container08">
               <input
                 type="text"
+                id="first name"
                 name="first name"
                 required
                 placeholder="first name"
-                id="first name"
                 className="contact-textinput3 input"
               />
               <input
                 type="text"
+                id="last name"
                 name="last name"
                 required
                 placeholder="last name"
-                id="last name"
                 className="contact-textinput4 input"
               />
             </div>
@@ -165,9 +165,9 @@ const Contact = (props) => {
               className="contact-textinput5 input"
             />
             <textarea
-              placeholder="message"
               id="message"
               name="message"
+              placeholder="message"
               className="contact-textarea1 textarea"
             ></textarea>
             <div className="contact-container09">

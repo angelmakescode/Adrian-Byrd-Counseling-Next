@@ -54,7 +54,7 @@ const GoalCoaching = (props) => {
         <GoalFormOFS rootClassName="goal-form-ofs-root-class-name"></GoalFormOFS>
         <div className="goal-coaching-container2">
           <form
-            action="https://formsubmit.co/delicatedesign.png@gmail.com"
+            action="https://formsubmit.co/adrian@adrianbyrdcounseling.com"
             method="POST"
             enctype="application/x-www-form-urlencoded"
             className="goal-coaching-form"
