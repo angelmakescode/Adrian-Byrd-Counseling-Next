@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Form1 = (props) => {
   return (
     <>
-      <div className="form1-container">
+      <div className={`form1-container ${props.rootClassName} `}>
         <form
           action="https://openformstack.com/f/clqk4nblf00048hsl9nf3vkbo"
           method="POST"
@@ -153,6 +153,9 @@ const Form1 = (props) => {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
+          .form1-root-class-name {
+            display: none;
+          }
           @media (max-width: 991px) {
             .form1-button {
               align-self: stretch;
@@ -210,6 +213,7 @@ Form1.defaultProps = {
   button: 'get started',
   heading1: 'LEAVE A MESSAGE',
   heading: 'LEAVE A MESSAGE',
+  rootClassName: '',
 }
 
 Form1.propTypes = {
@@ -222,6 +226,7 @@ Form1.propTypes = {
   button: PropTypes.string,
   heading1: PropTypes.string,
   heading: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default Form1

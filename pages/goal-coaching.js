@@ -66,30 +66,30 @@ const GoalCoaching = (props) => {
               <input
                 type="text"
                 name="first name"
-                placeholder="first name"
                 required
+                placeholder="first name"
                 className="goal-coaching-textinput input"
               />
               <input
                 type="text"
                 name="last name"
-                placeholder="last name"
                 required
+                placeholder="last name"
                 className="goal-coaching-textinput1 input"
               />
             </div>
             <input
               type="email"
               name="email address"
-              placeholder="email address"
               required
+              placeholder="email address"
               className="goal-coaching-textinput2 input"
             />
             <input
               type="number"
               name="phone number"
-              placeholder="phone number"
               required
+              placeholder="phone number"
               className="goal-coaching-textinput3 input"
             />
             <div className="goal-coaching-container4">
