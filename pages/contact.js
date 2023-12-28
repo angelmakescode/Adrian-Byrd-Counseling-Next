@@ -160,6 +160,7 @@ const Contact = (props) => {
               name="email address"
               required
               placeholder="email address"
+              id="email address"
               className="contact-textinput5 input"
             />
             <input
@@ -167,6 +168,7 @@ const Contact = (props) => {
               name="phone number"
               required
               placeholder="phone number"
+              id="phone number"
               className="contact-textinput6 input"
             />
             <textarea
