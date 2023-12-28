@@ -154,7 +154,9 @@ const GoalFormOFS = (props) => {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
-
+          .goal-form-ofs-root-class-name {
+            display: none;
+          }
           @media (max-width: 991px) {
             .goal-form-ofs-button {
               align-self: stretch;
