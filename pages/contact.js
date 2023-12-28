@@ -165,7 +165,7 @@ const Contact = (props) => {
               className="contact-textinput5 input"
             />
             <textarea
-              placeholder="placeholder"
+              placeholder="message"
               id="message"
               name="message"
               className="contact-textarea1 textarea"
