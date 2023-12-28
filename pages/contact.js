@@ -169,6 +169,13 @@ const Contact = (props) => {
               placeholder="phone number"
               className="contact-textinput6 input"
             />
+            <textarea
+              rows="4"
+              placeholder="message"
+              name="message"
+              id="message"
+              className="contact-textarea1 textarea"
+            ></textarea>
             <div className="contact-container09">
               <input
                 type="text"
@@ -563,6 +570,10 @@ const Contact = (props) => {
             width: 400px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
+          }
+          .contact-textarea1 {
+            width: 400px;
+            border-width: 0px;
           }
           .contact-container09 {
             flex: 0 0 auto;
@@ -1080,6 +1091,9 @@ const Contact = (props) => {
               width: 325px;
             }
             .contact-textinput6 {
+              width: 325px;
+            }
+            .contact-textarea1 {
               width: 325px;
             }
             .contact-button1 {
