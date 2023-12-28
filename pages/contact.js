@@ -215,7 +215,7 @@ const Contact = (props) => {
           </div>
         </div>
         <form
-          action="https://formsubmit.co/delicatedesign.png@gmail.com"
+          action="https://delicatedesign.png@gmail.com"
           method="POST"
           enctype="application/x-www-form-urlencoded"
           className="contact-form2"
