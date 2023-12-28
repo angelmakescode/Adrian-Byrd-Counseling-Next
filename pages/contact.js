@@ -133,18 +133,19 @@ const Contact = (props) => {
           <Form1 rootClassName="form1-root-class-name"></Form1>
           <div className="contact-container07"></div>
           <form
-            action="https://delicatedesign.png@gmail.com"
+            action="https://formsubmit.co/delicatedesign.png@gmail.com"
             method="POST"
             enctype="application/x-www-form-urlencoded"
             className="contact-form1"
           >
-            <h1 className="contact-text10">LEAVE A MESSAGE</h1>
+            <h1 className="contact-text10">Don&apos;t wait. Enroll today!</h1>
             <div className="contact-container08">
               <input
                 type="text"
                 name="first name"
                 required
                 placeholder="first name"
+                id="first name"
                 className="contact-textinput3 input"
               />
               <input
@@ -152,6 +153,7 @@ const Contact = (props) => {
                 name="last name"
                 required
                 placeholder="last name"
+                id="last name"
                 className="contact-textinput4 input"
               />
             </div>
@@ -160,31 +162,21 @@ const Contact = (props) => {
               name="email address"
               required
               placeholder="email address"
-              id="email address"
               className="contact-textinput5 input"
             />
-            <input
-              type="number"
-              name="phone number"
-              required
-              placeholder="phone number"
-              id="phone number"
-              className="contact-textinput6 input"
-            />
             <textarea
-              rows="4"
-              placeholder="message"
-              name="message"
+              placeholder="placeholder"
               id="message"
+              name="message"
               className="contact-textarea1 textarea"
             ></textarea>
             <div className="contact-container09">
               <input
                 type="text"
                 name="campaign"
-                value="contact-page"
+                value="2024-goal-coaching"
                 placeholder="placeholder"
-                className="contact-textinput7 input"
+                className="contact-textinput6 input"
               />
               <button
                 name="goal button"
@@ -568,13 +560,9 @@ const Contact = (props) => {
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .contact-textinput6 {
-            width: 400px;
-            border-width: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
           .contact-textarea1 {
             width: 400px;
+            height: 100px;
             border-width: 0px;
           }
           .contact-container09 {
@@ -585,7 +573,7 @@ const Contact = (props) => {
             align-items: flex-start;
             justify-content: center;
           }
-          .contact-textinput7 {
+          .contact-textinput6 {
             display: none;
           }
           .contact-button1 {
@@ -1090,12 +1078,6 @@ const Contact = (props) => {
               width: 150px;
             }
             .contact-textinput5 {
-              width: 325px;
-            }
-            .contact-textinput6 {
-              width: 325px;
-            }
-            .contact-textarea1 {
               width: 325px;
             }
             .contact-button1 {
