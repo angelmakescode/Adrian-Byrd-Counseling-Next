@@ -67,14 +67,14 @@ const Contact = (props) => {
                   name="number"
                   required
                   placeholder="number:"
-                  className="contact-textinput01 input"
+                  className="contact-textinput1 input"
                 />
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="email:"
-                  className="contact-textinput02 input"
+                  className="contact-textinput2 input"
                 />
                 <textarea
                   name="message"
@@ -131,55 +131,57 @@ const Contact = (props) => {
         </div>
         <div className="contact-hero1">
           <Form1 rootClassName="form1-root-class-name"></Form1>
-          <div className="contact-container07">
-            <form
-              action="https://delicatedesign.png@gmail.com"
-              method="POST"
-              enctype="application/x-www-form-urlencoded"
-              className="contact-form1"
-            >
-              <h1 className="contact-text10">LEAVE A MESSAGE</h1>
-              <div className="contact-container08">
-                <input
-                  type="text"
-                  name="first name"
-                  placeholder="first name"
-                  required
-                  className="contact-textinput03 input"
-                />
-                <input
-                  type="text"
-                  name="last name"
-                  placeholder="last name"
-                  required
-                  className="contact-textinput04 input"
-                />
-              </div>
+          <div className="contact-container07"></div>
+          <form
+            action="https://delicatedesign.png@gmail.com"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            className="contact-form1"
+          >
+            <h1 className="contact-text10">LEAVE A MESSAGE</h1>
+            <div className="contact-container08">
               <input
-                type="email address"
-                name="email address"
-                placeholder="email address"
+                type="text"
+                name="first name"
                 required
-                className="contact-textinput05 input"
+                placeholder="first name"
+                className="contact-textinput3 input"
               />
               <input
-                type="number"
-                name="phone number"
-                placeholder="phone number"
-                className="contact-textinput06 input"
+                type="text"
+                name="last name"
+                required
+                placeholder="last name"
+                className="contact-textinput4 input"
               />
-              <textarea
-                rows="4"
-                placeholder="message"
-                name="message"
-                className="contact-textarea1 textarea"
-              ></textarea>
+            </div>
+            <input
+              type="email"
+              name="email address"
+              required
+              placeholder="email address"
+              className="contact-textinput5 input"
+            />
+            <input
+              type="number"
+              name="phone number"
+              required
+              placeholder="phone number"
+              className="contact-textinput6 input"
+            />
+            <textarea
+              rows="4"
+              placeholder="message"
+              name="message"
+              className="contact-textarea1 textarea"
+            ></textarea>
+            <div className="contact-container09">
               <input
                 type="text"
                 name="campaign"
-                value="contact-us"
+                value="2024-goal-coaching"
                 placeholder="placeholder"
-                className="contact-textinput07 input"
+                className="contact-textinput7 input"
               />
               <button
                 name="goal button"
@@ -188,11 +190,11 @@ const Contact = (props) => {
               >
                 get started
               </button>
-            </form>
-          </div>
-          <div className="contact-container09">
-            <div className="contact-container10">
-              <div className="contact-container11">
+            </div>
+          </form>
+          <div className="contact-container10">
+            <div className="contact-container11">
+              <div className="contact-container12">
                 <React.Fragment>
                   <div style={{ width: '100%' }}>
                     <iframe
@@ -214,70 +216,10 @@ const Contact = (props) => {
             </div>
           </div>
         </div>
-        <form
-          action="https://delicatedesign.png@gmail.com"
-          method="POST"
-          enctype="application/x-www-form-urlencoded"
-          className="contact-form2"
-        >
-          <h1 className="contact-text11">LEAVE A MESSAGE</h1>
-          <div className="contact-container12">
-            <input
-              type="text"
-              name="first name"
-              required
-              placeholder="first name"
-              className="contact-textinput08 input"
-            />
-            <input
-              type="text"
-              name="last name"
-              required
-              placeholder="last name"
-              className="contact-textinput09 input"
-            />
-          </div>
-          <input
-            type="email"
-            name="email address"
-            required
-            placeholder="email address"
-            className="contact-textinput10 input"
-          />
-          <input
-            type="number"
-            name="phone number"
-            required
-            placeholder="phone number"
-            className="contact-textinput11 input"
-          />
-          <textarea
-            rows="4"
-            placeholder="message"
-            name="message"
-            className="contact-textarea2 textarea"
-          ></textarea>
-          <div className="contact-container13">
-            <input
-              type="text"
-              name="campaign"
-              value="2024-goal-coaching"
-              placeholder="placeholder"
-              className="contact-textinput12 input"
-            />
-            <button
-              name="goal button"
-              type="submit"
-              className="contact-button2 button"
-            >
-              get started
-            </button>
-          </div>
-        </form>
-        <div className="contact-container14">
-          <div className="contact-container15">
-            <div className="contact-container16">
-              <span className="contact-text12">EMAIL</span>
+        <div className="contact-container13">
+          <div className="contact-container14">
+            <div className="contact-container15">
+              <span className="contact-text11">EMAIL</span>
               <a
                 href="mailto:adrian@adrianbyrdcounseling.com?subject="
                 className="contact-link"
@@ -285,15 +227,15 @@ const Contact = (props) => {
                 adrian@adrianbyrdcounseling.com
               </a>
             </div>
-            <div className="contact-container17">
-              <span className="contact-text13">CALL</span>
+            <div className="contact-container16">
+              <span className="contact-text12">CALL</span>
               <a href="tel:(217) 358-4548" className="contact-link1">
                 (217) 358-4548
               </a>
             </div>
-            <div className="contact-container18">
-              <span className="contact-text14">OFFICE LOCATION</span>
-              <span className="contact-text15">
+            <div className="contact-container17">
+              <span className="contact-text13">OFFICE LOCATION</span>
+              <span className="contact-text14">
                 <a
                   href="https://www.google.com/maps/place/5130+Hickory+Point+Frontage+Rd+%23219,+Decatur,+IL+62526/@39.9110672,-88.9563392,17z/data=!3m1!4b1!4m5!3m4!1s0x8874b213b6207359:0x90e609820722f6be!8m2!3d39.9110631!4d-88.9537643?entry=ttu"
                   target="_blank"
@@ -426,7 +368,7 @@ const Contact = (props) => {
             border-right-width: 0px;
             border-bottom-width: 3px;
           }
-          .contact-textinput01 {
+          .contact-textinput1 {
             width: 250px;
             font-size: 15px;
             align-self: flex-start;
@@ -443,7 +385,7 @@ const Contact = (props) => {
             border-right-width: 0px;
             border-bottom-width: 3px;
           }
-          .contact-textinput02 {
+          .contact-textinput2 {
             width: 250px;
             font-size: 15px;
             align-self: flex-start;
@@ -568,11 +510,12 @@ const Contact = (props) => {
             justify-content: center;
           }
           .contact-container07 {
+            border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
             position: relative;
           }
           .contact-form1 {
-            width: 100%;
+            width: 500px;
             height: auto;
             display: flex;
             padding: var(--dl-space-space-twounits);
@@ -589,7 +532,7 @@ const Contact = (props) => {
             font-style: normal;
             margin-top: 0px;
             text-align: center;
-            font-family: Raleway;
+            font-family: 'Raleway';
             font-weight: 700;
             border-color: var(--dl-color-gray-beige);
             border-width: 1px;
@@ -606,23 +549,23 @@ const Contact = (props) => {
             align-items: flex-start;
             justify-content: center;
           }
-          .contact-textinput03 {
+          .contact-textinput3 {
             width: 190px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .contact-textinput04 {
+          .contact-textinput4 {
             width: 190px;
             margin-left: 20px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .contact-textinput05 {
+          .contact-textinput5 {
             width: 400px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
           }
-          .contact-textinput06 {
+          .contact-textinput6 {
             width: 400px;
             border-width: 0px;
             margin-bottom: var(--dl-space-space-twounits);
@@ -631,7 +574,15 @@ const Contact = (props) => {
             width: 400px;
             border-width: 0px;
           }
-          .contact-textinput07 {
+          .contact-container09 {
+            flex: 0 0 auto;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+          }
+          .contact-textinput7 {
             display: none;
           }
           .contact-button1 {
@@ -658,7 +609,7 @@ const Contact = (props) => {
             color: var(--dl-color-gray-beige);
             background-color: var(--dl-color-gray-black);
           }
-          .contact-container09 {
+          .contact-container10 {
             width: 100%;
             height: 600px;
             display: flex;
@@ -670,118 +621,23 @@ const Contact = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .contact-container10 {
+          .contact-container11 {
             width: 100%;
             height: 100%;
             margin-left: var(--dl-space-space-twounits);
             border-radius: 25px;
           }
-          .contact-container11 {
+          .contact-container12 {
             display: contents;
           }
-          .contact-form2 {
-            width: 500px;
-            height: auto;
-            display: flex;
-            padding: var(--dl-space-space-twounits);
-            align-items: center;
-            border-radius: 25px;
-            flex-direction: column;
-            padding-bottom: 32px;
-            justify-content: flex-start;
-            background-color: var(--dl-color-gray-green);
-          }
-          .contact-text11 {
-            color: var(--dl-color-gray-beige);
-            font-size: 2rem;
-            font-style: normal;
-            margin-top: 0px;
-            text-align: center;
-            font-family: 'Raleway';
-            font-weight: 700;
-            border-color: var(--dl-color-gray-beige);
-            border-width: 1px;
-            margin-bottom: var(--dl-space-space-twounits);
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-          }
-          .contact-container12 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-          }
-          .contact-textinput08 {
-            width: 190px;
-            border-width: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .contact-textinput09 {
-            width: 190px;
-            margin-left: 20px;
-            border-width: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .contact-textinput10 {
-            width: 400px;
-            border-width: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .contact-textinput11 {
-            width: 400px;
-            border-width: 0px;
-            margin-bottom: var(--dl-space-space-twounits);
-          }
-          .contact-textarea2 {
-            width: 400px;
-            border-width: 0px;
-          }
           .contact-container13 {
-            flex: 0 0 auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-          }
-          .contact-textinput12 {
-            display: none;
-          }
-          .contact-button2 {
-            font-size: 20px;
-            box-shadow: rgb(136, 135, 135) 5px 5px 10px 0px;
-            font-style: normal;
-            margin-top: var(--dl-space-space-unit);
-            transition: 0.3s;
-            font-family: 'Raleway';
-            font-weight: 600;
-            padding-top: var(--dl-space-space-unit);
-            border-width: 2.5px;
-            padding-left: var(--dl-space-space-twounits);
-            border-radius: 25px;
-            padding-right: var(--dl-space-space-twounits);
-            padding-bottom: var(--dl-space-space-unit);
-            text-transform: uppercase;
-            background-color: rgb(247, 213, 139);
-            border-top-width: 0px;
-            border-left-width: 0px;
-            border-right-width: 0px;
-          }
-          .contact-button2:hover {
-            color: var(--dl-color-gray-beige);
-            background-color: var(--dl-color-gray-black);
-          }
-          .contact-container14 {
             width: 100%;
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
             align-items: flex-start;
             justify-content: center;
           }
-          .contact-container15 {
+          .contact-container14 {
             flex: 2;
             width: 50%;
             display: flex;
@@ -790,7 +646,7 @@ const Contact = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .contact-container16 {
+          .contact-container15 {
             flex: 1;
             height: 250px;
             display: flex;
@@ -808,10 +664,10 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-beige);
           }
-          .contact-container16:hover {
+          .contact-container15:hover {
             transform: scale(1.02);
           }
-          .contact-text12 {
+          .contact-text11 {
             font-size: 1.5rem;
             font-style: normal;
             font-family: Raleway;
@@ -826,7 +682,7 @@ const Contact = (props) => {
             margin-bottom: var(--dl-space-space-threeunits);
             text-decoration: none;
           }
-          .contact-container17 {
+          .contact-container16 {
             flex: 1;
             color: #ffffff;
             height: 250px;
@@ -845,10 +701,10 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-beige);
           }
-          .contact-container17:hover {
+          .contact-container16:hover {
             transform: scale(1.02);
           }
-          .contact-text13 {
+          .contact-text12 {
             color: var(--dl-color-gray-black);
             font-size: 1.5rem;
             font-style: normal;
@@ -865,7 +721,7 @@ const Contact = (props) => {
             margin-bottom: var(--dl-space-space-threeunits);
             text-decoration: underline;
           }
-          .contact-container18 {
+          .contact-container17 {
             flex: 1;
             height: 250px;
             display: flex;
@@ -885,16 +741,16 @@ const Contact = (props) => {
             padding-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-beige);
           }
-          .contact-container18:hover {
+          .contact-container17:hover {
             transform: scale(1.02);
           }
-          .contact-text14 {
+          .contact-text13 {
             font-size: 1.5rem;
             font-style: normal;
             font-family: Raleway;
             font-weight: 700;
           }
-          .contact-text15 {
+          .contact-text14 {
             font-size: 20px;
             font-style: normal;
             margin-top: 38px;
@@ -974,7 +830,7 @@ const Contact = (props) => {
             .contact-button1 {
               align-self: stretch;
             }
-            .contact-container09 {
+            .contact-container10 {
               width: 95%;
               height: 100%;
               align-self: center;
@@ -984,38 +840,35 @@ const Contact = (props) => {
               margin-bottom: var(--dl-space-space-unit);
               padding-right: 0px;
             }
-            .contact-container10 {
+            .contact-container11 {
               width: 100%;
               height: 100%;
               align-self: center;
             }
-            .contact-button2 {
-              align-self: stretch;
-            }
-            .contact-container14 {
+            .contact-container13 {
               align-items: center;
               flex-direction: column;
             }
-            .contact-container15 {
+            .contact-container14 {
               width: 100%;
             }
-            .contact-text12 {
+            .contact-text11 {
               font-size: 1.3rem;
             }
             .contact-link {
               font-size: 18px;
             }
-            .contact-text13 {
+            .contact-text12 {
               font-size: 1.3rem;
             }
             .contact-link1 {
               font-size: 18px;
             }
-            .contact-text14 {
+            .contact-text13 {
               font-size: 1.3rem;
               text-align: center;
             }
-            .contact-text15 {
+            .contact-text14 {
               font-size: 18px;
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
@@ -1052,13 +905,13 @@ const Contact = (props) => {
               margin-left: 0px;
               margin-bottom: 5px;
             }
-            .contact-textinput01 {
+            .contact-textinput1 {
               font-size: 12px;
               margin-top: 5px;
               margin-left: 0px;
               margin-bottom: 5px;
             }
-            .contact-textinput02 {
+            .contact-textinput2 {
               font-size: 12px;
               margin-top: 5px;
               margin-left: 0px;
@@ -1122,42 +975,33 @@ const Contact = (props) => {
               align-self: center;
               text-align: center;
             }
-            .contact-container09 {
+            .contact-container10 {
               height: auto;
               padding-left: 0px;
               background-color: transparent;
             }
-            .contact-container10 {
+            .contact-container11 {
               width: 100%;
               height: 613px;
               margin-left: 0px;
             }
-            .contact-form2 {
-              width: 600px;
-            }
-            .contact-button2 {
-              width: 200px;
-              font-size: 18px;
-              align-self: center;
-              text-align: center;
-            }
-            .contact-container14 {
+            .contact-container13 {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .contact-container15 {
+            .contact-container14 {
               flex-direction: column;
             }
-            .contact-container16 {
+            .contact-container15 {
               width: 100%;
               margin-left: var(--dl-space-space-threeunits);
               margin-right: var(--dl-space-space-threeunits);
               margin-bottom: var(--dl-space-space-twounits);
             }
-            .contact-container17 {
+            .contact-container16 {
               width: 100%;
             }
-            .contact-container18 {
+            .contact-container17 {
               width: 100%;
               margin-left: var(--dl-space-space-threeunits);
               margin-right: var(--dl-space-space-threeunits);
@@ -1194,13 +1038,13 @@ const Contact = (props) => {
               padding-top: var(--dl-space-space-halfunit);
               padding-bottom: var(--dl-space-space-halfunit);
             }
-            .contact-textinput01 {
+            .contact-textinput1 {
               align-self: center;
               margin-left: 0px;
               padding-top: var(--dl-space-space-halfunit);
               padding-bottom: var(--dl-space-space-halfunit);
             }
-            .contact-textinput02 {
+            .contact-textinput2 {
               align-self: center;
               margin-left: 0px;
               padding-top: var(--dl-space-space-halfunit);
@@ -1236,16 +1080,16 @@ const Contact = (props) => {
             .contact-form1 {
               width: 400px;
             }
-            .contact-textinput03 {
+            .contact-textinput3 {
               width: 150px;
             }
-            .contact-textinput04 {
+            .contact-textinput4 {
               width: 150px;
             }
-            .contact-textinput05 {
+            .contact-textinput5 {
               width: 325px;
             }
-            .contact-textinput06 {
+            .contact-textinput6 {
               width: 325px;
             }
             .contact-textarea1 {
@@ -1256,40 +1100,17 @@ const Contact = (props) => {
               font-style: normal;
               font-weight: 700;
             }
-            .contact-container09 {
+            .contact-container10 {
               padding-left: 0px;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .contact-form2 {
-              width: 400px;
-            }
-            .contact-textinput08 {
-              width: 150px;
-            }
-            .contact-textinput09 {
-              width: 150px;
-            }
-            .contact-textinput10 {
-              width: 325px;
-            }
-            .contact-textinput11 {
-              width: 325px;
-            }
-            .contact-textarea2 {
-              width: 325px;
-            }
-            .contact-button2 {
-              font-size: 12px;
-              font-style: normal;
-              font-weight: 700;
-            }
-            .contact-container14 {
+            .contact-container13 {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: 0px;
             }
-            .contact-container15 {
+            .contact-container14 {
               height: 634px;
             }
           }
