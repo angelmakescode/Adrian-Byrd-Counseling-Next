@@ -733,7 +733,6 @@ const Info = (props) => {
           </div>
         </div>
         <Footer></Footer>
-        <Footer></Footer>
       </div>
       <style jsx>
         {`
