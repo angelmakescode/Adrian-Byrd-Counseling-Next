@@ -138,41 +138,41 @@ const Info = (props) => {
           </h1>
           <div className="info-container06">
             <FeatureCard11
-              image_src="https://i.imgur.com/owjn0kr.jpg"
+              imageSrc="https://i.imgur.com/owjn0kr.jpg"
               rootClassName="rootClassName11"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="https://i.imgur.com/7PNabqZ.jpg"
+              imageSrc="https://i.imgur.com/7PNabqZ.jpg"
               rootClassName="rootClassName12"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="https://i.imgur.com/qPd5qac.jpg"
+              imageSrc="https://i.imgur.com/qPd5qac.jpg"
               rootClassName="rootClassName13"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/99/a9/20/99a920e5-4ba4-82ca-cec8-96e99da624b6/AppIcon-1x_U007emarketing-0-10-0-sRGB-85-220.png/1200x630wa.png"
+              imageSrc="https://is2-ssl.mzstatic.com/image/thumb/Purple116/v4/99/a9/20/99a920e5-4ba4-82ca-cec8-96e99da624b6/AppIcon-1x_U007emarketing-0-10-0-sRGB-85-220.png/1200x630wa.png"
               rootClassName="rootClassName14"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="/download-removebg-preview-200h.png"
+              imageSrc="/download-removebg-preview-200h.png"
               rootClassName="rootClassName18"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="https://i.imgur.com/K7ai5fL.png"
+              imageSrc="https://i.imgur.com/K7ai5fL.png"
               rootClassName="rootClassName15"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="https://www.healthlink.com/assets/images/header_logo.png"
+              imageSrc="https://www.healthlink.com/assets/images/header_logo.png"
               rootClassName="rootClassName16"
             ></FeatureCard11>
             <FeatureCard11
-              image_src="https://i.imgur.com/5PJmmB9.png"
+              imageSrc="https://i.imgur.com/5PJmmB9.png"
               rootClassName="rootClassName17"
             ></FeatureCard11>
           </div>
           <div className="info-container07">
             <FeatureCard11
-              image_src="https://consociatehealth.com/wp-content/uploads/2018/10/LOGOnew-1.png"
+              imageSrc="https://consociatehealth.com/wp-content/uploads/2018/10/LOGOnew-1.png"
               rootClassName="rootClassName19"
             ></FeatureCard11>
             <a

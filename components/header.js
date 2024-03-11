@@ -15,8 +15,8 @@ const Header = (props) => {
         <Link href="/">
           <a className="header-link">
             <img
-              alt={props.image_alt}
-              src={props.image_src}
+              alt={props.imageAlt}
+              src={props.imageSrc}
               className="header-image"
             />
           </a>
@@ -763,44 +763,44 @@ const Header = (props) => {
 
 Header.defaultProps = {
   rootClassName: '',
-  image_alt1: 'image',
+  imageAlt1: 'image',
   button: 'VIDEO SESSION',
-  image_src1: 'e9a463fc-bb16-4933-9072-aa17652ca74f',
-  Login: 'VIDEO SESSION',
-  CONTACT1: 'CONTACT',
-  HOME: 'HOME',
-  TEAM: 'TEAM',
+  imageSrc1: 'e9a463fc-bb16-4933-9072-aa17652ca74f',
+  login: 'VIDEO SESSION',
+  cONTACT1: 'CONTACT',
+  hOME: 'HOME',
+  tEAM: 'TEAM',
   text1: 'MENU',
-  image_src: '/adrian-byrd-counseling-primary-logo-medium-1500h1.png',
-  Register: 'CONTACT',
-  ABOUT: 'ABOUT',
+  imageSrc: '/adrian-byrd-counseling-primary-logo-medium-1500h1.png',
+  register: 'CONTACT',
+  aBOUT: 'ABOUT',
   button1: 'CONTACT',
-  CONTACT: 'CONTACT',
-  VIDEO_SESSION: 'VIDEO SESSION',
-  INFO: 'INFO',
+  cONTACT: 'CONTACT',
+  vIDEOSESSION: 'VIDEO SESSION',
+  iNFO: 'INFO',
   text: 'VIDEO SESSION',
-  image_alt: 'logo',
+  imageAlt: 'logo',
 }
 
 Header.propTypes = {
   rootClassName: PropTypes.string,
-  image_alt1: PropTypes.string,
+  imageAlt1: PropTypes.string,
   button: PropTypes.string,
-  image_src1: PropTypes.string,
-  Login: PropTypes.string,
-  CONTACT1: PropTypes.string,
-  HOME: PropTypes.string,
-  TEAM: PropTypes.string,
+  imageSrc1: PropTypes.string,
+  login: PropTypes.string,
+  cONTACT1: PropTypes.string,
+  hOME: PropTypes.string,
+  tEAM: PropTypes.string,
   text1: PropTypes.string,
-  image_src: PropTypes.string,
-  Register: PropTypes.string,
-  ABOUT: PropTypes.string,
+  imageSrc: PropTypes.string,
+  register: PropTypes.string,
+  aBOUT: PropTypes.string,
   button1: PropTypes.string,
-  CONTACT: PropTypes.string,
-  VIDEO_SESSION: PropTypes.string,
-  INFO: PropTypes.string,
+  cONTACT: PropTypes.string,
+  vIDEOSESSION: PropTypes.string,
+  iNFO: PropTypes.string,
   text: PropTypes.string,
-  image_alt: PropTypes.string,
+  imageAlt: PropTypes.string,
 }
 
 export default Header

@@ -14,8 +14,8 @@ const TestimonialCard4 = (props) => {
         <span className="testimonial-card4-text">{props.quote}</span>
         <div className="testimonial-card4-profile">
           <img
-            alt={props.picture_alt}
-            src={props.picture_src}
+            alt={props.pictureAlt}
+            src={props.pictureSrc}
             className="testimonial-card4-image"
           />
           <div className="testimonial-card4-container">
@@ -118,9 +118,9 @@ const TestimonialCard4 = (props) => {
 }
 
 TestimonialCard4.defaultProps = {
-  picture_src:
+  pictureSrc:
     'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdHxlbnwwfHx8fDE2MjYzNzg5NzI&ixlib=rb-1.2.1&h=1200',
-  picture_alt: 'John Doe',
+  pictureAlt: 'John Doe',
   role: 'Software Engineer',
   name: 'John Doe',
   rootClassName: '',
@@ -129,8 +129,8 @@ TestimonialCard4.defaultProps = {
 }
 
 TestimonialCard4.propTypes = {
-  picture_src: PropTypes.string,
-  picture_alt: PropTypes.string,
+  pictureSrc: PropTypes.string,
+  pictureAlt: PropTypes.string,
   role: PropTypes.string,
   name: PropTypes.string,
   rootClassName: PropTypes.string,

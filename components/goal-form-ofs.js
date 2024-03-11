@@ -17,26 +17,26 @@ const GoalFormOFS = (props) => {
             <input
               type="text"
               name="first name"
-              placeholder={props.textinput_placeholder2}
+              placeholder={props.textinputPlaceholder2}
               className="goal-form-ofs-textinput input"
             />
             <input
               type="text"
               name="last name"
-              placeholder={props.textinput_placeholder3}
+              placeholder={props.textinputPlaceholder3}
               className="goal-form-ofs-textinput1 input"
             />
           </div>
           <input
             type="email"
             name="email address"
-            placeholder={props.textinput_placeholder}
+            placeholder={props.textinputPlaceholder}
             className="goal-form-ofs-textinput2 input"
           />
           <input
             type="number"
             name="phone number"
-            placeholder={props.textinput_placeholder1}
+            placeholder={props.textinputPlaceholder1}
             className="goal-form-ofs-textinput3 input"
           />
           <div className="goal-form-ofs-container2">
@@ -44,7 +44,7 @@ const GoalFormOFS = (props) => {
               type="text"
               name="campaign"
               value="2024-goal-coaching"
-              placeholder={props.textinput_placeholder4}
+              placeholder={props.textinputPlaceholder4}
               className="goal-form-ofs-textinput4 input"
             />
             <button
@@ -202,28 +202,28 @@ const GoalFormOFS = (props) => {
 }
 
 GoalFormOFS.defaultProps = {
-  textinput_placeholder4: 'placeholder',
+  textinputPlaceholder4: 'placeholder',
   button: 'get started',
   heading1: "Don't wait. Enroll today!",
-  textinput_placeholder1: 'phone number',
-  textinput_placeholder3: 'last name',
-  textinput_placeholder2: 'first name',
+  textinputPlaceholder1: 'phone number',
+  textinputPlaceholder3: 'last name',
+  textinputPlaceholder2: 'first name',
   heading: "Don't wait. Enroll today!",
-  textarea_placeholder: 'message',
-  textinput_placeholder: 'email address',
+  textareaPlaceholder: 'message',
+  textinputPlaceholder: 'email address',
   rootClassName: '',
 }
 
 GoalFormOFS.propTypes = {
-  textinput_placeholder4: PropTypes.string,
+  textinputPlaceholder4: PropTypes.string,
   button: PropTypes.string,
   heading1: PropTypes.string,
-  textinput_placeholder1: PropTypes.string,
-  textinput_placeholder3: PropTypes.string,
-  textinput_placeholder2: PropTypes.string,
+  textinputPlaceholder1: PropTypes.string,
+  textinputPlaceholder3: PropTypes.string,
+  textinputPlaceholder2: PropTypes.string,
   heading: PropTypes.string,
-  textarea_placeholder: PropTypes.string,
-  textinput_placeholder: PropTypes.string,
+  textareaPlaceholder: PropTypes.string,
+  textinputPlaceholder: PropTypes.string,
   rootClassName: PropTypes.string,
 }
 

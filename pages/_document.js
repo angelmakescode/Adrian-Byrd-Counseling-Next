@@ -25,6 +25,10 @@ class CustomDocument extends Document {
             data-tag="default-style-sheet"
           ></style>
           <link
+            rel="stylesheet"
+            href="https://unpkg.com/animate.css@4.1.1/animate.css"
+          ></link>
+          <link
             rel="shortcut icon"
             href="/adrian-byrd-counseling-primary-logo-medium-1500h.png"
             type="icon/png"

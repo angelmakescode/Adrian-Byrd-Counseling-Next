@@ -41,7 +41,7 @@ const Footer = (props) => {
                 className="footer-link3"
               >
                 <img
-                  alt={props.image_alt}
+                  alt={props.imageAlt}
                   src="https://media.licdn.com/dms/image/D4E0BAQESdpyXQfpO-w/company-logo_200_200/0/1688570692907/psychology_today_logo?e=2147483647&amp;v=beta&amp;t=FFa6Yr3IFFVvLm_BtG8jyXW0fj3nlQl6JHJ-OQ25EJw"
                   className="footer-image"
                 />
@@ -278,16 +278,16 @@ const Footer = (props) => {
 }
 
 Footer.defaultProps = {
-  image_alt: 'image',
+  imageAlt: 'image',
   text: '(217) 358-4548',
-  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  imageSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
   rootClassName: '',
 }
 
 Footer.propTypes = {
-  image_alt: PropTypes.string,
+  imageAlt: PropTypes.string,
   text: PropTypes.string,
-  image_src: PropTypes.string,
+  imageSrc: PropTypes.string,
   rootClassName: PropTypes.string,
 }
 

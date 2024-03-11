@@ -1080,6 +1080,9 @@ const Contact = (props) => {
             .contact-textinput5 {
               width: 325px;
             }
+            .contact-textarea1 {
+              width: 325px;
+            }
             .contact-button1 {
               font-size: 12px;
               font-style: normal;

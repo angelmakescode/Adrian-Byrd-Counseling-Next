@@ -23,11 +23,7 @@ const Hero = (props) => {
             </span>
           </span>
         </div>
-        <img
-          alt={props.image_alt}
-          src={props.image_src}
-          className="hero-image"
-        />
+        <img alt={props.imageAlt} src={props.imageSrc} className="hero-image" />
       </div>
       <style jsx>
         {`
@@ -175,8 +171,8 @@ Hero.defaultProps = {
   heading: 'meet your coach',
   rootClassName: '',
   heading1: 'Adrian byrd',
-  image_src: 'https://i.imgur.com/mmU03TW.jpg',
-  image_alt: 'image',
+  imageSrc: 'https://i.imgur.com/mmU03TW.jpg',
+  imageAlt: 'image',
   heading2: 'MEET YOUR COACH',
   heading21: 'MEET YOUR COACH',
 }
@@ -189,8 +185,8 @@ Hero.propTypes = {
   heading: PropTypes.string,
   rootClassName: PropTypes.string,
   heading1: PropTypes.string,
-  image_src: PropTypes.string,
-  image_alt: PropTypes.string,
+  imageSrc: PropTypes.string,
+  imageAlt: PropTypes.string,
   heading2: PropTypes.string,
   heading21: PropTypes.string,
 }

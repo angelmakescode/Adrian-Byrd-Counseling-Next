@@ -111,18 +111,18 @@ const Testimonial = (props) => {
 }
 
 Testimonial.defaultProps = {
-  image_src: 'https://i.imgur.com/YQOxXlE.png',
-  image_src1: 'https://i.imgur.com/YQOxXlE.png',
-  image_alt1: 'image',
-  image_alt: 'image',
+  imageSrc: 'https://i.imgur.com/YQOxXlE.png',
+  imageSrc1: 'https://i.imgur.com/YQOxXlE.png',
+  imageAlt1: 'image',
+  imageAlt: 'image',
   rootClassName: '',
 }
 
 Testimonial.propTypes = {
-  image_src: PropTypes.string,
-  image_src1: PropTypes.string,
-  image_alt1: PropTypes.string,
-  image_alt: PropTypes.string,
+  imageSrc: PropTypes.string,
+  imageSrc1: PropTypes.string,
+  imageAlt1: PropTypes.string,
+  imageAlt: PropTypes.string,
   rootClassName: PropTypes.string,
 }
 

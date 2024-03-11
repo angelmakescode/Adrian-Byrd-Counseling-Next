@@ -17,38 +17,38 @@ const Form1 = (props) => {
             <input
               type="text"
               name="first name"
-              placeholder={props.textinput_placeholder3}
+              placeholder={props.textinputPlaceholder3}
               className="form1-textinput input"
             />
             <input
               type="text"
               name="last name"
-              placeholder={props.textinput_placeholder4}
+              placeholder={props.textinputPlaceholder4}
               className="form1-textinput1 input"
             />
           </div>
           <input
             type="email"
             name="email address"
-            placeholder={props.textinput_placeholder}
+            placeholder={props.textinputPlaceholder}
             className="form1-textinput2 input"
           />
           <input
             type="number"
             name="phone number"
-            placeholder={props.textinput_placeholder1}
+            placeholder={props.textinputPlaceholder1}
             className="form1-textinput3 input"
           />
           <textarea
             rows="4"
-            placeholder={props.textarea_placeholder}
+            placeholder={props.textareaPlaceholder}
             className="form1-textarea textarea"
           ></textarea>
           <input
             type="text"
             name="campaign"
             value="contact-us"
-            placeholder={props.textinput_placeholder2}
+            placeholder={props.textinputPlaceholder2}
             className="form1-textinput4 input"
           />
           <button
@@ -204,26 +204,26 @@ const Form1 = (props) => {
 }
 
 Form1.defaultProps = {
-  textinput_placeholder1: 'phone number',
-  textinput_placeholder4: 'last name',
-  textinput_placeholder: 'email address',
-  textinput_placeholder2: 'placeholder',
+  textinputPlaceholder1: 'phone number',
+  textinputPlaceholder4: 'last name',
+  textinputPlaceholder: 'email address',
+  textinputPlaceholder2: 'placeholder',
   rootClassName: '',
-  textarea_placeholder: 'message',
-  textinput_placeholder3: 'first name',
+  textareaPlaceholder: 'message',
+  textinputPlaceholder3: 'first name',
   button: 'get started',
   heading1: 'LEAVE A MESSAGE',
   heading: 'LEAVE A MESSAGE',
 }
 
 Form1.propTypes = {
-  textinput_placeholder1: PropTypes.string,
-  textinput_placeholder4: PropTypes.string,
-  textinput_placeholder: PropTypes.string,
-  textinput_placeholder2: PropTypes.string,
+  textinputPlaceholder1: PropTypes.string,
+  textinputPlaceholder4: PropTypes.string,
+  textinputPlaceholder: PropTypes.string,
+  textinputPlaceholder2: PropTypes.string,
   rootClassName: PropTypes.string,
-  textarea_placeholder: PropTypes.string,
-  textinput_placeholder3: PropTypes.string,
+  textareaPlaceholder: PropTypes.string,
+  textinputPlaceholder3: PropTypes.string,
   button: PropTypes.string,
   heading1: PropTypes.string,
   heading: PropTypes.string,

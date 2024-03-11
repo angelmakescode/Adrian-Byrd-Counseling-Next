@@ -7,8 +7,8 @@ const FeatureCard11 = (props) => {
     <>
       <div className={`feature-card11-feature-card ${props.rootClassName} `}>
         <img
-          alt={props.image_alt}
-          src={props.image_src}
+          alt={props.imageAlt}
+          src={props.imageSrc}
           className="feature-card11-image"
         />
       </div>
@@ -140,16 +140,16 @@ const FeatureCard11 = (props) => {
 FeatureCard11.defaultProps = {
   rootClassName: '',
   title: 'Lorem ipsum',
-  image_alt: 'image',
-  image_src:
+  imageAlt: 'image',
+  imageSrc:
     'https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHllbGxvdyUyMHRlY2h8ZW58MHx8fHwxNjI2MjU1NDk0&ixlib=rb-1.2.1&w=1000',
 }
 
 FeatureCard11.propTypes = {
   rootClassName: PropTypes.string,
   title: PropTypes.string,
-  image_alt: PropTypes.string,
-  image_src: PropTypes.string,
+  imageAlt: PropTypes.string,
+  imageSrc: PropTypes.string,
 }
 
 export default FeatureCard11
