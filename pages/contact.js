@@ -1,13 +1,56 @@
-import React from 'react'
-import Head from 'next/head'
+import React, { useState } from "react";
+import Head from "next/head";
 
-import Script from 'dangerous-html/react'
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-import Header from '../components/header'
-import Form1 from '../components/form1'
-import Footer from '../components/footer'
+const FORM_ACCESS_TOKEN = "a879e2a6-83ed-4bf3-87b9-76de4e11b16d";
+
+const ContactState = {
+  Pending: 0,
+  Loading: 1,
+  Success: 2,
+  Failure: 3,
+};
 
 const Contact = (props) => {
+  const [state, setState] = useState(ContactState.Pending);
+  const isDisabled = [ContactState.Loading, ContactState.Success].includes(
+    state
+  );
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function onSubmit(event) {
+    event.preventDefault();
+    if (isDisabled) return;
+
+    try {
+      setState(ContactState.Loading);
+
+      const formData = new FormData(event.target);
+      formData.append("access_key", FORM_ACCESS_TOKEN);
+      formData.append("firstName", firstName);
+      formData.append("lastName", lastName);
+      formData.append("email", email);
+      formData.append("message", message);
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData, // ✅ No need for headers, FormData handles it automatically
+      })
+        .then((response) => {
+          setState(response.ok ? ContactState.Success : ContactState.Failure);
+        })
+        .catch(() => setState(ContactState.Failure));
+    } catch {
+      setState(ContactState.Failure);
+    }
+  }
+
   return (
     <>
       <div className="contact-container">
@@ -28,88 +71,11 @@ const Contact = (props) => {
         </Head>
         <Header></Header>
         <div className="contact-hero">
-          <div className="contact-container01">
-            <h1 className="contact-text">LEAVE A MESSAGE</h1>
-            <span className="contact-text01">
-              <span>Need to reach out? Fill out this form.</span>
-              <br></br>
-              <span>
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <span>
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-            </span>
-            <div className="contact-container02">
-              <form
-                action="https://formsubmit.co/adrian@adrianbyrdcounseling.com"
-                method="POST"
-                enctype="application/x-www-form-urlencoded"
-                className="contact-form"
-              >
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="name:"
-                  className="contact-textinput input"
-                />
-                <input
-                  type="tel"
-                  name="number"
-                  required
-                  placeholder="number:"
-                  className="contact-textinput1 input"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="email:"
-                  className="contact-textinput2 input"
-                />
-                <textarea
-                  name="message"
-                  placeholder="leave a message:"
-                  className="contact-textarea textarea"
-                ></textarea>
-                <button type="submit" className="contact-button button">
-                  SUBMIT
-                </button>
-              </form>
-              <h1 className="contact-text06">
-                <span className="contact-text07">
-                  I am committed to your privacy. Do NOT include confidential or
-                  private information regarding your health condition in this
-                  form or any other form found on this website.
-                </span>
-                <br></br>
-              </h1>
-              <div className="contact-container03">
-                <input
-                  type="checkbox"
-                  checked="true"
-                  className="contact-checkbox"
-                />
-                <span className="contact-text09">
-                  Check this to agree to our Terms &amp; Conditions.
-                </span>
-              </div>
-            </div>
-          </div>
           <div className="contact-container04">
             <div className="contact-container05">
               <div className="contact-container06">
                 <React.Fragment>
-                  <div style={{ width: '100%' }}>
+                  <div style={{ width: "100%" }}>
                     <iframe
                       width="100%"
                       height={600}
@@ -130,68 +96,68 @@ const Contact = (props) => {
           </div>
         </div>
         <div className="contact-hero1">
-          <Form1 rootClassName="form1-root-class-name"></Form1>
           <div className="contact-container07"></div>
-          <form
-            action="https://formsubmit.co/adrian@adrianbyrdcounseling.com"
-            method="POST"
-            enctype="application/x-www-form-urlencoded"
-            className="contact-form1"
-          >
-            <h1 className="contact-text10">LEAVE A MESSAGE</h1>
-            <div className="contact-container08">
+          {state !== ContactState.Success ? (
+            <form className="contact-form1" onSubmit={onSubmit}>
+              <h1 className="contact-text10">LEAVE A MESSAGE</h1>
+              <div className="contact-container08">
+                <input
+                  type="text"
+                  id="first name"
+                  name="first name"
+                  required
+                  placeholder="first name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.currentTarget.value ?? "")}
+                  className="contact-textinput3 input"
+                />
+                <input
+                  type="text"
+                  id="last name"
+                  name="last name"
+                  required
+                  placeholder="last name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.currentTarget.value ?? "")}
+                  className="contact-textinput4 input"
+                />
+              </div>
               <input
-                type="text"
-                id="first name"
-                name="first name"
+                type="email"
+                name="email address"
                 required
-                placeholder="first name"
-                className="contact-textinput3 input"
+                placeholder="email address"
+                value={email}
+                onChange={(e) => setEmail(e.currentTarget.value ?? "")}
+                className="contact-textinput5 input"
               />
-              <input
-                type="text"
-                id="last name"
-                name="last name"
-                required
-                placeholder="last name"
-                className="contact-textinput4 input"
-              />
-            </div>
-            <input
-              type="email"
-              name="email address"
-              required
-              placeholder="email address"
-              className="contact-textinput5 input"
-            />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="message"
-              className="contact-textarea1 textarea"
-            ></textarea>
-            <div className="contact-container09">
-              <input
-                type="text"
-                name="campaign"
-                value="2024-contaact-page"
-                placeholder="placeholder"
-                className="contact-textinput6 input"
-              />
-              <button
-                name="goal button"
-                type="submit"
-                className="contact-button1 button"
-              >
-                get started
-              </button>
-            </div>
-          </form>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="message"
+                value={message}
+                onChange={(e) => setMessage(e.currentTarget.value ?? "")}
+                className="contact-textarea1 textarea"
+              ></textarea>
+              <div className="contact-container09">
+                <button
+                  name="goal button"
+                  type="submit"
+                  className="contact-button1 button"
+                  disabled={isDisabled}
+                >
+                  get started
+                </button>
+              </div>
+            </form>
+          ) : (
+            <div>thanks for ur submission</div>
+          )}
           <div className="contact-container10">
             <div className="contact-container11">
               <div className="contact-container12">
                 <React.Fragment>
-                  <div style={{ width: '100%' }}>
+                  <div style={{ width: "100%" }}>
                     <iframe
                       width="100%"
                       height={600}
@@ -527,7 +493,7 @@ const Contact = (props) => {
             font-style: normal;
             margin-top: 0px;
             text-align: center;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 700;
             border-color: var(--dl-color-gray-beige);
             border-width: 1px;
@@ -582,7 +548,7 @@ const Contact = (props) => {
             font-style: normal;
             margin-top: var(--dl-space-space-unit);
             transition: 0.3s;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 600;
             padding-top: var(--dl-space-space-unit);
             border-width: 2.5px;
@@ -1105,7 +1071,7 @@ const Contact = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
