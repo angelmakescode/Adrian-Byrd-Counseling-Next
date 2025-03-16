@@ -1,13 +1,59 @@
-import React from 'react'
-import Head from 'next/head'
+import React, { useState } from "react";
+import Head from "next/head";
+import Header from "../components/header";
+import GoalFormOFS from "../components/goal-form-ofs";
+import Hero from "../components/hero";
+import Testimonial from "../components/testimonial";
+import Footer from "../components/footer";
 
-import Header from '../components/header'
-import GoalFormOFS from '../components/goal-form-ofs'
-import Hero from '../components/hero'
-import Testimonial from '../components/testimonial'
-import Footer from '../components/footer'
+const FORM_ACCESS_TOKEN = "5b06b779-ff49-466e-9d07-90295c048c52";
+
+const ContactState = {
+  Pending: 0,
+  Loading: 1,
+  Success: 2,
+  Failure: 3,
+};
 
 const GoalCoaching = (props) => {
+  const [state, setState] = useState(ContactState.Pending);
+  const isDisabled = [ContactState.Loading, ContactState.Success].includes(
+    state
+  );
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  function onSubmit(event) {
+    event.preventDefault();
+    if (isDisabled) return;
+
+    try {
+      setState(ContactState.Loading);
+
+      const formData = new FormData(event.target);
+      formData.append("access_key", FORM_ACCESS_TOKEN);
+      formData.append("form_name", "Goal Coaching");
+      formData.append("firstName", firstName);
+      formData.append("lastName", lastName);
+      formData.append("email", email);
+      formData.append("phoneNumber", phoneNumber);
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          setState(response.ok ? ContactState.Success : ContactState.Failure);
+        })
+        .catch(() => setState(ContactState.Failure));
+    } catch {
+      setState(ContactState.Failure);
+    }
+  }
+
   return (
     <>
       <div className="goal-coaching-container">
@@ -17,32 +63,12 @@ const GoalCoaching = (props) => {
             name="description"
             content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
           />
-          <meta
-            property="og:title"
-            content="Goal-Coaching - Adrian Byrd Counseling"
-          />
-          <meta
-            property="og:description"
-            content="Specialist in ACT, DBT, CBT—collaborative therapy for growth. Move confidently towards a brighter future."
-          />
         </Head>
         <Header rootClassName="header-root-class-name3"></Header>
         <div className="goal-coaching-hero">
           <div className="goal-coaching-container1">
             <span className="goal-coaching-text">
-              <span className="goal-coaching-text01">
-                MAKE 2024 THE YEAR YOU
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <span className="goal-coaching-text02">CRUSH YOUR GOALS</span>
-              <br className="goal-coaching-text03"></br>
-            </span>
-            <span className="goal-coaching-text04">
-              With our coaching program you will:
+              MAKE 2025 THE YEAR YOU CRUSH YOUR GOALS
             </span>
           </div>
           <img
@@ -51,95 +77,86 @@ const GoalCoaching = (props) => {
             className="goal-coaching-image"
           />
         </div>
+
         <GoalFormOFS rootClassName="goal-form-ofs-root-class-name"></GoalFormOFS>
+
         <div className="goal-coaching-container2">
-          <form
-            action="https://formsubmit.co/adrian@adrianbyrdcounseling.com"
-            method="POST"
-            enctype="application/x-www-form-urlencoded"
-            className="goal-coaching-form"
-          >
-            <h1 className="goal-coaching-text05">
-              Don&apos;t wait. Enroll today!
-            </h1>
-            <div className="goal-coaching-container3">
+          {/* Display form or Thank You message based on submission state */}
+          {state === ContactState.Pending || state === ContactState.Loading ? (
+            <form className="goal-coaching-form" onSubmit={onSubmit}>
+              <h1 className="goal-coaching-text05">
+                Don't wait. Enroll today!
+              </h1>
+              <div className="goal-coaching-container3">
+                <input
+                  type="text"
+                  name="first name"
+                  required
+                  placeholder="first name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.currentTarget.value ?? "")}
+                  className="goal-coaching-textinput input"
+                />
+                <input
+                  type="text"
+                  name="last name"
+                  required
+                  placeholder="last name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.currentTarget.value ?? "")}
+                  className="goal-coaching-textinput1 input"
+                />
+              </div>
               <input
-                type="text"
-                name="first name"
+                type="email"
+                name="email address"
                 required
-                placeholder="first name"
-                className="goal-coaching-textinput input"
+                placeholder="email address"
+                value={email}
+                onChange={(e) => setEmail(e.currentTarget.value ?? "")}
+                className="goal-coaching-textinput2 input"
               />
               <input
-                type="text"
-                name="last name"
+                type="number"
+                name="phone number"
                 required
-                placeholder="last name"
-                className="goal-coaching-textinput1 input"
+                placeholder="phone number"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.currentTarget.value ?? "")}
+                className="goal-coaching-textinput3 input"
               />
-            </div>
-            <input
-              type="email"
-              name="email address"
-              required
-              placeholder="email address"
-              className="goal-coaching-textinput2 input"
-            />
-            <input
-              type="number"
-              name="phone number"
-              required
-              placeholder="phone number"
-              className="goal-coaching-textinput3 input"
-            />
-            <div className="goal-coaching-container4">
-              <input
-                type="text"
-                name="campaign"
-                value="2024-goal-coaching"
-                placeholder="placeholder"
-                className="goal-coaching-textinput4 input"
+              <div className="goal-coaching-container4">
+                <input
+                  type="text"
+                  name="campaign"
+                  value="2024-goal-coaching"
+                  placeholder="placeholder"
+                  className="goal-coaching-textinput4 input"
+                />
+                <button
+                  name="goal button"
+                  type="submit"
+                  className="goal-coaching-button button"
+                  disabled={isDisabled}
+                >
+                  Get Started
+                </button>
+              </div>
+            </form>
+          ) : (
+            <div className="confirmation-container">
+              <img
+                src="confirmgif.gif"
+                alt="Success GIF"
+                className="confirmation-gif"
               />
-              <button
-                name="goal button"
-                type="submit"
-                className="goal-coaching-button button"
-              >
-                get started
-              </button>
+              <div className="confirmation-message">
+                Message received! We will be in touch soon.
+              </div>
             </div>
-          </form>
+          )}
         </div>
-        <div className="goal-coaching-hero1">
-          <img
-            alt="image"
-            src="https://i.imgur.com/hXzuerG.png"
-            className="goal-coaching-image1"
-          />
-          <div className="goal-coaching-container5">
-            <span className="goal-coaching-text06">
-              <span className="goal-coaching-text07">SIMPLE PRICING</span>
-              <br className="goal-coaching-text08"></br>
-              <br className="goal-coaching-text09"></br>
-              <span className="goal-coaching-text10">6 sessions</span>
-              <span className="goal-coaching-text11"> for $97/month</span>
-              <br className="goal-coaching-text12"></br>
-              <br className="goal-coaching-text13"></br>
-              <span className="goal-coaching-text14">12 sessions</span>
-              <span className="goal-coaching-text15"> for $177/month</span>
-              <br className="goal-coaching-text16"></br>
-              <br className="goal-coaching-text17"></br>
-              <span className="goal-coaching-text18">18 sessions</span>
-              <span className="goal-coaching-text19"> for $277/month</span>
-              <br className="goal-coaching-text20"></br>
-              <br className="goal-coaching-text21"></br>
-              <span className="goal-coaching-text22">
-                All packages include unlimited messaging in between sessions
-              </span>
-              <br className="goal-coaching-text23"></br>
-            </span>
-          </div>
-        </div>
+
         <Hero></Hero>
         <Testimonial rootClassName="testimonial-root-class-name"></Testimonial>
         <Footer></Footer>
@@ -184,7 +201,7 @@ const GoalCoaching = (props) => {
             font-size: 1.3rem;
             align-self: flex-start;
             text-align: left;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 500;
           }
           .goal-coaching-text01 {
@@ -203,7 +220,7 @@ const GoalCoaching = (props) => {
             color: var(--dl-color-gray-black);
             font-size: 1.3rem;
             margin-top: var(--dl-space-space-halfunit);
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 500;
             margin-right: var(--dl-space-space-oneandhalfunits);
             margin-bottom: var(--dl-space-space-twounits);
@@ -291,7 +308,7 @@ const GoalCoaching = (props) => {
             font-style: normal;
             margin-top: var(--dl-space-space-unit);
             transition: 0.3s;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 600;
             padding-top: var(--dl-space-space-unit);
             border-width: 2.5px;
@@ -343,12 +360,16 @@ const GoalCoaching = (props) => {
             flex-direction: column;
             justify-content: center;
           }
+
+          .confirmation-container {
+            margin-bottom: 200px !important;
+          }
           .goal-coaching-text06 {
             width: 95%;
             font-size: 1.3rem;
             align-self: center;
             text-align: left;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 500;
           }
           .goal-coaching-text07 {
@@ -404,7 +425,7 @@ const GoalCoaching = (props) => {
           }
           .goal-coaching-text22 {
             font-size: 1.5rem;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 600;
           }
           .goal-coaching-text23 {
@@ -605,7 +626,7 @@ const GoalCoaching = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default GoalCoaching
+export default GoalCoaching;

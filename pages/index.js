@@ -1,9 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Home = (props) => {
   return (
@@ -29,7 +29,7 @@ const Home = (props) => {
               <br className="home-text02"></br>
               <br className="home-text03"></br>
               <span className="home-text04">
-                Adrian M. Byrd, LCSW is known for a progressive form of
+                Adrian M. Byrd, LCSW is known for utilizing progressive forms of
                 psychotherapy that combines different therapeutic tools and
                 approaches to fit the needs of the individual client. Counseling
                 is available in my calming and beautiful office, telehealth by
@@ -39,21 +39,21 @@ const Home = (props) => {
               <span className="home-text06">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
               <span className="home-text07">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
               <span className="home-text08">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -84,21 +84,21 @@ const Home = (props) => {
               <span className="home-text13">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
               <span className="home-text14">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
               <span className="home-text15">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -199,7 +199,7 @@ const Home = (props) => {
               call
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -250,14 +250,14 @@ const Home = (props) => {
             <span className="home-text65">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
             <span className="home-text66">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -540,7 +540,7 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-twounits);
             background-size: cover;
-            background-image: url('https://i.imgur.com/lM5lVcN.jpg');
+            background-image: url("https://i.imgur.com/lM5lVcN.jpg");
           }
           .home-by-video:hover {
             transform: scale(1.02);
@@ -594,7 +594,7 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-twounits);
             background-size: cover;
-            background-image: url('https://i.imgur.com/INAqaod.jpg');
+            background-image: url("https://i.imgur.com/INAqaod.jpg");
           }
           .home-in-person:hover {
             transform: scale(1.02);
@@ -647,7 +647,7 @@ const Home = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-twounits);
             background-size: cover;
-            background-image: url('https://images.pexels.com/photos/5094348/pexels-photo-5094348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-image: url("https://images.pexels.com/photos/5094348/pexels-photo-5094348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
           }
           .home-by-phone:hover {
             transform: scale(1.02);
@@ -1483,7 +1483,7 @@ const Home = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

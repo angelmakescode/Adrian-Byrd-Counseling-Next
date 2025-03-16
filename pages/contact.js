@@ -4,7 +4,7 @@ import Head from "next/head";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-const FORM_ACCESS_TOKEN = "a879e2a6-83ed-4bf3-87b9-76de4e11b16d";
+const FORM_ACCESS_TOKEN = "5b06b779-ff49-466e-9d07-90295c048c52";
 
 const ContactState = {
   Pending: 0,
@@ -33,6 +33,7 @@ const Contact = (props) => {
 
       const formData = new FormData(event.target);
       formData.append("access_key", FORM_ACCESS_TOKEN);
+      formData.append("form_name", "Contact Form");
       formData.append("firstName", firstName);
       formData.append("lastName", lastName);
       formData.append("email", email);
@@ -40,7 +41,7 @@ const Contact = (props) => {
 
       fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData, // ✅ No need for headers, FormData handles it automatically
+        body: formData,
       })
         .then((response) => {
           setState(response.ok ? ContactState.Success : ContactState.Failure);
@@ -101,6 +102,9 @@ const Contact = (props) => {
             <form className="contact-form1" onSubmit={onSubmit}>
               <h1 className="contact-text10">LEAVE A MESSAGE</h1>
               <div className="contact-container08">
+
+              <input type="hidden" name="form_name" value="Contact Form" />
+
                 <input
                   type="text"
                   id="first name"
@@ -151,7 +155,16 @@ const Contact = (props) => {
               </div>
             </form>
           ) : (
-            <div>thanks for ur submission</div>
+            <div className="confirmation-container">
+              <img
+                src="confirmgif.gif"
+                alt="Success GIF"
+                className="confirmation-gif"
+              />
+              <div className="confirmation-message">
+                Message received! We will be in touch soon.
+              </div>
+            </div>
           )}
           <div className="contact-container10">
             <div className="contact-container11">

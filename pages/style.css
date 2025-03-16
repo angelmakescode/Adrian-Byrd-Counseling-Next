@@ -111,6 +111,22 @@
   text-decoration: none;
 }
 
+.confirmation-message {
+  color: black;
+  font-size: 18px;
+  font-family: Inter;
+  text-align: center;
+  padding: 10px;
+  border: transparent;
+  border-radius: 12px;
+}
+
+.confirmation-gif {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
 
 @media(max-width: 479px) {
   .button-primary {
