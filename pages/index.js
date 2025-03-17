@@ -77,8 +77,8 @@ const Home = (props) => {
             </h1>
             <span className="home-text10">
               <span className="home-text11">
-                Adrian M. Byrd, LCSW is known for a utilizing progressive forms
-                of psychotherapy such as EMDR &amp; Brainspotting,
+                Adrian M. Byrd, LCSW is known for utilizing progressive forms of
+                psychotherapy such as EMDR &amp; Brainspotting,
               </span>
               <br className="home-text12"></br>
               <span className="home-text13">
