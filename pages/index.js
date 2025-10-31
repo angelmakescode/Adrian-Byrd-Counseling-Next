@@ -29,11 +29,8 @@ const Home = (props) => {
               <br className="home-text02"></br>
               <br className="home-text03"></br>
               <span className="home-text04">
-                Adrian M. Byrd, LCSW is known for utilizing progressive forms of
-                psychotherapy that combines different therapeutic tools and
-                approaches to fit the needs of the individual client. Counseling
-                is available in my calming and beautiful office, telehealth by
-                phone, and even video!
+               Known for a utilizing progressive forms of psychotherapy Adrian M. Byrd, LCSW is proficient in treatment such as EMDR & Brainspotting.
+
               </span>
               <br className="home-text05"></br>
               <span className="home-text06">
@@ -117,10 +114,9 @@ const Home = (props) => {
         </div>
         <h1 className="home-text16">Therapy catered to you.</h1>
         <span className="home-text17">
-          <span>Care available from the comfort of your</span>
-          <br></br>
-          <span>laptop, inside </span>
-          <span>my welcoming office, or on the go.</span>
+          <span>Sessions designed for comfort, flexibility & results.
+</span>
+        
         </span>
         <div className="home-pricing">
           <div className="home-options">
@@ -137,7 +133,8 @@ const Home = (props) => {
                 </Link>
               </div>
               <div className="home-in-person">
-                <span className="home-text27">IN PERSON</span>
+                <span className="home-text27">MESSAGING
+                  SUPPORT</span>
                 <Link href="/contact">
                   <a className="home-link03 button">book session</a>
                 </Link>
