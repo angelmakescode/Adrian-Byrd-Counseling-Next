@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
 
-import Header from '../components/header'
-import FeatureCard11 from '../components/feature-card11'
-import Footer from '../components/footer'
+import Header from "../components/header";
+import FeatureCard11 from "../components/feature-card11";
+import Footer from "../components/footer";
 
 const Info = (props) => {
   return (
@@ -43,7 +43,7 @@ const Info = (props) => {
               <span className="info-text003">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -51,26 +51,26 @@ const Info = (props) => {
               <span className="info-text005">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
               <span className="info-text006">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
               <span className="info-text007">
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
             </span>
-            <h1 className="info-text008">CURRENT FEES</h1>
+            <h1 className="info-text008">THERAPY</h1>
             <span className="info-text009">
               <span>-Initial Appointment (60 Minutes) $180</span>
               <br></br>
@@ -86,6 +86,9 @@ const Info = (props) => {
                 the contracted rate and you will not be billed for the remaining
                 amount. All contracted rates vary.
               </span>
+              <h1 className="info-text008">SUPERVISION</h1>
+              <span>-Group Supervision (4 persons minimum) $30/person</span>
+              <span>-Individual Supervison $95/hr</span>
             </span>
             <div className="info-btn-group">
               <Link href="/contact">
@@ -98,24 +101,28 @@ const Info = (props) => {
           <div className="info-testimonial1">
             <h1 className="info-text020">AREAS OF EXPERTISE</h1>
             <h1 className="info-text021">
+              <span>PTSD</span>
+              <br></br>
+              <span> CPTSD</span>
+              <br></br>
               <span>Trauma</span>
               <br></br>
-              <span> PTSD</span>
-              <br></br>
-              <span>CPTSD</span>
-              <br></br>
               <span>Depression</span>
-              <br></br>
-              <span>Anxiety Disorders</span>
               <br></br>
               <span>Grief Counseling</span>
               <br></br>
               <span>LGBTQIA+</span>
               <br></br>
+              <span>ADD/ADHD</span>
+              <br></br>
+              <span>Anxiety Disorders</span>
+              <br></br>
+              <span>Relationship Concerns for Individuals</span>
+              <br></br>
               <span>
                 <span
                   dangerouslySetInnerHTML={{
-                    __html: ' ',
+                    __html: " ",
                   }}
                 />
               </span>
@@ -1010,7 +1017,7 @@ const Info = (props) => {
           .info-text041 {
             font-size: 2em;
             font-style: normal;
-            font-family: 'Raleway';
+            font-family: "Raleway";
             font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
           }
@@ -2746,7 +2753,7 @@ const Info = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
-export default Info
+export default Info;

@@ -1,9 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import NavigationLinks from './navigation-links'
+import NavigationLinks from "./navigation-links";
 
 const Header = (props) => {
   return (
@@ -111,11 +111,7 @@ const Header = (props) => {
               <div
                 data-thq="thq-dropdown-toggle"
                 className="header-dropdown-toggle6"
-              >
-                <Link href="/goal-coaching">
-                  <a className="header-link07">GOAL COACHING</a>
-                </Link>
-              </div>
+              ></div>
             </li>
             <li data-thq="thq-dropdown" className="header-dropdown7 list-item">
               <div
@@ -758,29 +754,29 @@ const Header = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Header.defaultProps = {
-  rootClassName: '',
-  imageAlt1: 'image',
-  button: 'VIDEO SESSION',
-  imageSrc1: 'e9a463fc-bb16-4933-9072-aa17652ca74f',
-  login: 'VIDEO SESSION',
-  cONTACT1: 'CONTACT',
-  hOME: 'HOME',
-  tEAM: 'TEAM',
-  text1: 'MENU',
-  imageSrc: '/adrian-byrd-counseling-primary-logo-medium-1500h1.png',
-  register: 'CONTACT',
-  aBOUT: 'ABOUT',
-  button1: 'CONTACT',
-  cONTACT: 'CONTACT',
-  vIDEOSESSION: 'VIDEO SESSION',
-  iNFO: 'INFO',
-  text: 'VIDEO SESSION',
-  imageAlt: 'logo',
-}
+  rootClassName: "",
+  imageAlt1: "image",
+  button: "VIDEO SESSION",
+  imageSrc1: "e9a463fc-bb16-4933-9072-aa17652ca74f",
+  login: "VIDEO SESSION",
+  cONTACT1: "CONTACT",
+  hOME: "HOME",
+  tEAM: "TEAM",
+  text1: "MENU",
+  imageSrc: "/adrian-byrd-counseling-primary-logo-medium-1500h1.png",
+  register: "CONTACT",
+  aBOUT: "ABOUT",
+  button1: "CONTACT",
+  cONTACT: "CONTACT",
+  vIDEOSESSION: "VIDEO SESSION",
+  iNFO: "INFO",
+  text: "VIDEO SESSION",
+  imageAlt: "logo",
+};
 
 Header.propTypes = {
   rootClassName: PropTypes.string,
@@ -801,6 +797,6 @@ Header.propTypes = {
   iNFO: PropTypes.string,
   text: PropTypes.string,
   imageAlt: PropTypes.string,
-}
+};
 
-export default Header
+export default Header;
