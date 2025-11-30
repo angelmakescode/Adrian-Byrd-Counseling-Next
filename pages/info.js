@@ -87,17 +87,17 @@ const Info = (props) => {
                 amount. All contracted rates vary.
               </span>
               <br></br>
-<h1 className="info-text0010" style={{ fontWeight: 700 }}>SUPERVISION</h1>
+              <h1 className="info-text0010">SUPERVISION</h1>
               <br></br>
               <span>-Group Supervision (4 persons minimum) $30/person</span>
-                            <br></br>
+              <br></br>
               <span>-Individual Supervison $95/hr</span>
             </span>
             <div className="info-btn-group">
               <Link href="/contact">
                 <a className="info-link button">Get Started</a>
               </Link>
-            </div>==≠≠
+            </div>
           </div>
         </div>
         <div className="info-testimonial">
