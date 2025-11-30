@@ -826,6 +826,13 @@ const Info = (props) => {
             font-family: Raleway;
             font-weight: 500;
           }
+            .info-text0010{
+            font-size: 1.3rem;
+            font-style: normal;
+            margin-top: var(--dl-space-space-halfunit);
+            font-family: Raleway;
+            font-weight: 500;
+            }
           .info-btn-group {
             display: flex;
             align-self: flex-end;
