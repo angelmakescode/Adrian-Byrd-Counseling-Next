@@ -86,7 +86,10 @@ const Info = (props) => {
                 the contracted rate and you will not be billed for the remaining
                 amount. All contracted rates vary.
               </span>
-              <h1 className="info-text0010">SUPERVISION</h1>
+                                          <br></br>
+
+              <h1 className="info-text0010">SUPERVISION</h1>   font-weight: bold;
+
               <span>-Group Supervision (4 persons minimum) $30/person</span>
                             <br></br>
               <span>-Individual Supervison $95/hr</span>
