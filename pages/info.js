@@ -88,6 +88,7 @@ const Info = (props) => {
               </span>
               <h1 className="info-text0010">SUPERVISION</h1>
               <span>-Group Supervision (4 persons minimum) $30/person</span>
+                            <br></br>
               <span>-Individual Supervison $95/hr</span>
             </span>
             <div className="info-btn-group">
