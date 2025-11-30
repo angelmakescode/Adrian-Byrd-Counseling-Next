@@ -88,8 +88,7 @@ const Info = (props) => {
               </span>
                                           <br></br>
 
-              <h1 className="info-text0010">SUPERVISION</h1>   font-weight: bold;
-
+<h1 className="info-text0010" style="font-weight:700;">SUPERVISION</h1>
               <span>-Group Supervision (4 persons minimum) $30/person</span>
                             <br></br>
               <span>-Individual Supervison $95/hr</span>
@@ -98,7 +97,7 @@ const Info = (props) => {
               <Link href="/contact">
                 <a className="info-link button">Get Started</a>
               </Link>
-            </div>
+            </div>==≠≠
           </div>
         </div>
         <div className="info-testimonial">
