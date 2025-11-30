@@ -827,7 +827,7 @@ const Info = (props) => {
             font-weight: 500;
           }
             .info-text0010{
-            font-size: 1.3rem;
+            font-size: 1.8rem;
             font-style: normal;
             margin-top: var(--dl-space-space-halfunit);
             font-family: Raleway;
