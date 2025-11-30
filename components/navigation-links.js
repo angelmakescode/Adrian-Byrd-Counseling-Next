@@ -19,9 +19,6 @@ const NavigationLinks = (props) => {
         <Link href="/info">
           <a className="navigation-links-link3">{props.text3}</a>
         </Link>
-        <Link href="/goal-coaching">
-          <a className="navigation-links-link4">{props.text32}</a>
-        </Link>
         <Link href="/contact">
           <a className="navigation-links-link5">{props.text31}</a>
         </Link>
