@@ -157,7 +157,7 @@ const GoalCoaching = (props) => {
           )}
         </div>
 
-        <Hero></Hero>
+        <Hero>test</Hero>
         <Testimonial rootClassName="testimonial-root-class-name"></Testimonial>
         <Footer></Footer>
       </div>
