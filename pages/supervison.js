@@ -68,7 +68,13 @@ const GoalCoaching = (props) => {
         <div className="goal-coaching-hero">
           <div className="goal-coaching-container1">
             <span className="goal-coaching-text">
-              MAKE 2025 THE YEAR YOU CRUSH YOUR GOALS
+              SERVICES:
+              -Group supervision options for LCSW candidates
+              -Individual supervision for focused, personalized development
+
+              RATES:
+              -Group Supervision (4 persons minimum): $30/person
+              -Individual Supervision: $95/hr
             </span>
           </div>
           <img

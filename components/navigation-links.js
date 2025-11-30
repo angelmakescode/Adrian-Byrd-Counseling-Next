@@ -13,7 +13,7 @@ const NavigationLinks = (props) => {
         <Link href="/about">
           <a className="navigation-links-link1">{props.text2}</a>
         </Link>
-        <Link href="/team">
+        <Link href="/supervison">
           <a className="navigation-links-link2">{props.text21}</a>
         </Link>
         <Link href="/info">

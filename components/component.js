@@ -10,15 +10,17 @@ const AppComponent = (props) => {
         <h1 className="app-component-text1">{props.heading1}</h1>
         <span className="app-component-text2">
           <span>
-            Adrian works collaboratively with her clients, helping them clarify
-            and reach each one of their individualized goals.
+            If you want to grow your skills with structured, supportive, and straightforward guidance,
+            you're in the right place. I offer supervision for clinicians pursuing LCSW licensure in Illinois,
+            including both individual and group formats, depending on your needs.
+
           </span>
           <br></br>
           <br></br>
           <span>
-            By allowing her clients to explore who they are in an encouraging
-            and safe environment, Adrian helps people move away from things that
-            no longer work and move forward to a better way of being.
+            I provide clinical supervision for developing therapists who want strong guidance, practical
+            support, and real-world skill building. My approach blends seminar-style learning with case
+            consultation so you gain confidence, clarity, and ethical grounding in your work.
           </span>
         </span>
       </div>
